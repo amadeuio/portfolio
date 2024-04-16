@@ -1,0 +1,20 @@
+@import "../../globalStyles/mixins";
+
+.skills {
+  @include flex-column;
+  gap: 30px;
+
+  .skillList {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    .skillTag {
+      border: 1px solid var(--color-300);
+      border-radius: 5px;
+      padding: 14px;
+      white-space: nowrap;
+    }
+  }
+}

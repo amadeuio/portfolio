@@ -11,17 +11,26 @@ const ComingSoon = () => {
         <p> Meanwhile, check out some of my projects ⬇️</p>
         <ul className={styles.list}>
           <li>
-            <a href="https://github.com/amadeuio/fruits-store" target="_blank">
+            <a
+              href="https://github.com/amadeuio/fruits-store"
+              target="_blank"
+              rel="noopener noreferrer">
               Fruits Store
             </a>
           </li>
           <li>
-            <a href="https://github.com/amadeuio/make-your-cv" target="_blank">
+            <a
+              href="https://github.com/amadeuio/make-your-cv"
+              target="_blank"
+              rel="noopener noreferrer">
               Make Your CV
             </a>
           </li>
           <li>
-            <a href="https://github.com/amadeuio/battleship" target="_blank">
+            <a
+              href="https://github.com/amadeuio/battleship"
+              target="_blank"
+              rel="noopener noreferrer">
               Battleship
             </a>
           </li>

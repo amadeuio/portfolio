@@ -1,0 +1,42 @@
+@import "../../globalStyles/mixins";
+
+.contact {
+  @include flex-column;
+  gap: 30px;
+
+  .title {
+    @include flex-column;
+    gap: 10px;
+  }
+
+  .links {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    .iconContainer {
+      cursor: pointer;
+      padding: 12px;
+      border-radius: 5px;
+      transition: background-color 0.2s ease;
+
+      svg {
+        height: 24px;
+        width: 24px;
+      }
+
+      .gitHubIcon {
+        stroke: var(--color-800);
+      }
+
+      .linkedInIcon,
+      .stackOverflowIcon {
+        fill: var(--color-800);
+      }
+
+      &:hover {
+        background-color: var(--color-300);
+      }
+    }
+  }
+}

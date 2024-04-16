@@ -1,0 +1,28 @@
+@import "../../globalStyles/mixins";
+
+.footer {
+  padding: 30px 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  font-size: 14px;
+  color: var(--color-400);
+
+  .sourceCode {
+    color: var(--color-highlight);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+
+    svg {
+      height: 18px;
+      width: auto;
+    }
+
+    .gitHubIcon {
+      stroke: var(--color-highlight);
+    }
+  }
+}

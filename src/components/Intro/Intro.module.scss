@@ -1,0 +1,47 @@
+@import "../../globalStyles/mixins";
+
+.intro {
+  @include flex-column;
+  gap: 30px;
+
+  .title {
+    @include flex-column;
+    gap: 10px;
+  }
+
+  .hand {
+    margin: 0 20px;
+    height: 60px;
+  }
+
+  .bio {
+    width: 80%;
+
+    .expandedBio {
+      @include flex-column;
+      padding-top: 30px;
+      gap: 30px;
+    }
+  }
+
+  .expandBioContainer {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .expandBioButton {
+      font-size: 16px;
+      color: var(--color-400);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: left;
+      gap: 10px;
+
+      .expandIcon {
+        fill: var(--color-400);
+      }
+    }
+  }
+}

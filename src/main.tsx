@@ -1,11 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { LangContextProvider } from "./context/LangContext";
+import { NightModeContextProvider } from "./context/NightModeContext";
 import App from "./App.tsx";
 import "./globalStyles/reset.scss";
-import "./globalStyles/global.scss";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <App />
+    <NightModeContextProvider>
+      <LangContextProvider>
+        <App />
+      </LangContextProvider>
+    </NightModeContextProvider>
   </React.StrictMode>
 );

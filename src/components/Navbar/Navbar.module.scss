@@ -1,0 +1,30 @@
+@import "../../globalStyles/mixins";
+
+.navbar {
+  padding: 30px 180px;
+  display: flex;
+  justify-content: space-between;
+
+  .left {
+    .logo {
+      font-size: 20px;
+      font-weight: 600;
+    }
+  }
+
+  .right {
+    display: flex;
+    gap: 30px;
+
+    .toggleNight {
+      cursor: pointer;
+    }
+
+    .toggleLang {
+      cursor: pointer;
+      color: var(--color-400);
+      width: 23px;
+      text-align: left;
+    }
+  }
+}
