@@ -1,10 +1,8 @@
 import { useLangContext } from "../../context/LangContext";
-import { useNightModeContext } from "../../context/NightModeContext";
 import NightSwitch from "./NightSwitch/NightSwitch";
 import styles from "./Navbar.module.scss";
 
 const Navbar = () => {
-  const { isNightMode, toggleNightMode } = useNightModeContext();
   const { lang, toggleLang } = useLangContext();
 
   return (
@@ -16,7 +14,7 @@ const Navbar = () => {
         <div className={styles.toggleLang} onClick={toggleLang}>
           {lang.toUpperCase()}
         </div>
-        <NightSwitch isNightMode={isNightMode} onClick={toggleNightMode} />
+        <NightSwitch />
       </div>
     </nav>
   );

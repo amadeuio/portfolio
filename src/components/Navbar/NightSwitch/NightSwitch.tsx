@@ -1,4 +1,5 @@
 import styles from "./NightSwitch.module.scss";
+import { useNightModeContext } from "../../../context/NightModeContext";
 
 const DayIcon = ({ className }) => {
   return (
@@ -16,11 +17,13 @@ const NightIcon = ({ className }) => {
   );
 };
 
-const NightSwitch = ({ isNightMode, onClick }) => {
+const NightSwitch = () => {
+  const { isNightMode, toggleNightMode } = useNightModeContext();
+
   return (
     <div
       className={`${styles.nightSwitch} ${isNightMode ? styles.switchOn : ""}`}
-      onClick={onClick}>
+      onClick={toggleNightMode}>
       <DayIcon className={styles.dayIcon} />
       <NightIcon className={styles.nightIcon} />
       <div className={`${styles.slider} ${isNightMode ? styles.sliderOn : ""}`}></div>
