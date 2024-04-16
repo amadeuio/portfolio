@@ -14,11 +14,8 @@
 
   .right {
     display: flex;
+    align-items: center;
     gap: 30px;
-
-    .toggleNight {
-      cursor: pointer;
-    }
 
     .toggleLang {
       cursor: pointer;
