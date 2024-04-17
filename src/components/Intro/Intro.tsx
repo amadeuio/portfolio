@@ -2,7 +2,7 @@ import styles from "./Intro.module.scss";
 import ExpandIcon from "../../icons/ExpandIcon";
 import Collapse from "./Collapse/Collapse";
 import { useState } from "react";
-import { greeting, name, profession, bio, expandLabel, collapseLabel } from "../../data/locales";
+import { hi, name, profession, bio, expandLabel, collapseLabel } from "../../data/locales";
 import { useLangContext } from "../../context/LangContext";
 
 const Intro = () => {
@@ -15,13 +15,16 @@ const Intro = () => {
 
   return (
     <div className={styles.intro}>
-      <div className={styles.title}>
-        <h1 className={styles.hi}>
-          {greeting[lang]},
-          <img className={styles.hand} src="images/waving-hand-emoji.png" />
-        </h1>
-        <h1>{name[lang]}</h1>
-        <h4>{profession[lang]}</h4>
+      <div className={styles.profile}>
+        <div className={styles.profileInfo}>
+          <h1>
+            {hi[lang]},
+            <img className={styles.hand} src="images/waving-hand-emoji.png" />
+          </h1>
+          <h1>{name[lang]}</h1>
+          <h4>{profession[lang]}</h4>
+        </div>
+        <img className={styles.profilePic} src="/images/profile-pic.jpg" />
       </div>
 
       <div className={styles.bio}>

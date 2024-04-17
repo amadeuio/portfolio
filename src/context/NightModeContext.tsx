@@ -19,7 +19,7 @@ export const useNightModeContext = () => {
 };
 
 export const NightModeContextProvider: React.FC<ProviderProps> = ({ children }) => {
-  const [isNightMode, setIsNightMode] = useState<boolean>(true);
+  const [isNightMode, setIsNightMode] = useState<boolean>(false);
 
   const toggleNightMode = () => {
     setIsNightMode((prevMode) => !prevMode);

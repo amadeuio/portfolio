@@ -1,10 +1,10 @@
 .icon {
-  height: 16px;
+  height: 18px;
   width: auto;
   fill: var(--color-800);
 
   &.css {
-    height: 14px;
+    height: 15px;
     width: auto;
   }
 
@@ -21,7 +21,7 @@
 
 .textIcon {
   font-weight: 600;
-  font-size: 13px;
+  font-size: 14px;
 
   &.jest {
     transform: translateY(1px);

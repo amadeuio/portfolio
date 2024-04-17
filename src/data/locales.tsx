@@ -1,4 +1,4 @@
-export const greeting = {
+export const hi = {
   en: "Hi",
   es: "Hola",
 };
