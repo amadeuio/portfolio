@@ -1,7 +1,7 @@
 @import "../../globalStyles/mixins";
 
 .footer {
-  padding: 30px 120px;
+  padding: 27px 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -9,7 +9,12 @@
   font-size: 14px;
   color: var(--color-400);
 
-  .sourceCode {
+  .credits {
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  .portfolioRepo {
     color: var(--color-highlight);
     display: flex;
     align-items: center;
@@ -24,5 +29,10 @@
     .gitHubIcon {
       stroke: var(--color-highlight);
     }
+  }
+
+  @media screen and (max-width: 791px) {
+    gap: 20px;
+    flex-direction: column;
   }
 }

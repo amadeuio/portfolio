@@ -17,7 +17,7 @@ const Footer = () => {
 
       <a
         href="https://github.com/amadeuio"
-        className={styles.sourceCode}
+        className={styles.portfolioRepo}
         target="_blank"
         rel="noopener noreferrer">
         <GitHubIcon className={styles.gitHubIcon} />

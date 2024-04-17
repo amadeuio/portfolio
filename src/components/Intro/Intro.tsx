@@ -16,14 +16,12 @@ const Intro = () => {
   return (
     <div className={styles.intro}>
       <div className={styles.profile}>
-        <div className={styles.profileInfo}>
-          <h1>
-            {hi[lang]},
-            <img className={styles.hand} src="images/waving-hand-emoji.png" />
-          </h1>
-          <h1>{name[lang]}</h1>
-          <h4>{profession[lang]}</h4>
-        </div>
+        <h1>
+          {hi[lang]},
+          <img className={styles.hand} src="images/waving-hand-emoji.png" />
+        </h1>
+        <h1>{name[lang]}</h1>
+        <h4>{profession[lang]}</h4>
         <img className={styles.profilePic} src="/images/profile-pic.jpg" />
       </div>
 

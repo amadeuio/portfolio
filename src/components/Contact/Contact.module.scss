@@ -38,5 +38,14 @@
         background-color: var(--color-300);
       }
     }
+
+    @media screen and (max-width: 791px) {
+      justify-content: center;
+      gap: 20px;
+    }
+
+    @media screen and (max-width: 360px) {
+      gap: 0px;
+    }
   }
 }

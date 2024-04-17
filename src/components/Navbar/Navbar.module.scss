@@ -1,11 +1,15 @@
 @import "../../globalStyles/mixins";
 
 .navbar {
-  padding: 30px 180px;
+  padding: 30px 0;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 20px;
 
   .left {
+    display: flex;
+    align-items: center;
+
     .logo {
       font-size: 20px;
       font-weight: 600;

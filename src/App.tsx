@@ -12,14 +12,14 @@ const App = () => {
 
   return (
     <div className={`${styles.app} ${isNightMode ? styles.nightMode : ""}`}>
-      <Navbar />
       <div className={styles.content}>
+        <Navbar />
         <Intro />
         <Projects />
         <Skills />
         <Contact />
+        <Footer />
       </div>
-      <Footer />
     </div>
   );
 };

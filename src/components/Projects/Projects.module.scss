@@ -9,4 +9,8 @@
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+
+  @media screen and (max-width: 791px) {
+    justify-content: center;
+  }
 }

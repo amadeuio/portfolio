@@ -5,21 +5,22 @@
   gap: 30px;
 
   .profile {
-    display: flex;
+    max-width: 500px;
+
+    @include flex-column;
     gap: 10px;
 
-    .profileInfo {
-      @include flex-column;
-      gap: 10px;
-
-      .hand {
-        margin-left: 20px;
-        height: 60px;
-      }
+    .hand {
+      margin-left: 20px;
+      height: 60px;
     }
 
+    position: relative;
+
     .profilePic {
-      transform: translateY(-30px);
+      position: absolute;
+      right: 0;
+      top: -30px;
       width: 130px;
       height: 130px;
       border-radius: 100%;
@@ -34,6 +35,10 @@
       @include flex-column;
       padding-top: 30px;
       gap: 30px;
+    }
+
+    @media screen and (max-width: 791px) {
+      width: 100%;
     }
   }
 
@@ -53,6 +58,8 @@
       gap: 10px;
 
       .expandIcon {
+        width: 20px;
+        height: 20px;
         fill: var(--color-400);
       }
     }
