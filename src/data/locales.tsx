@@ -73,7 +73,7 @@ export const projectsTitle = {
   es: "Proyectos",
 };
 
-export const skills = {
+export const skillsTitle = {
   en: "Skills",
   es: "Conocimientos",
 };

@@ -1,0 +1,29 @@
+.icon {
+  height: 16px;
+  width: auto;
+  fill: var(--color-800);
+
+  &.css {
+    height: 14px;
+    width: auto;
+  }
+
+  &.restApi {
+    height: 12px;
+    width: auto;
+  }
+
+  &.dataStructures {
+    width: 14px;
+    height: auto;
+  }
+}
+
+.textIcon {
+  font-weight: 600;
+  font-size: 13px;
+
+  &.jest {
+    transform: translateY(1px);
+  }
+}

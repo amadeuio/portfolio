@@ -3,33 +3,23 @@
 .app {
   --color-0: white;
   --color-50: #f8fafc;
-  --color-100: #f1f5f9;
   --color-200: #e2e8f0;
   --color-300: #cbd5e1;
   --color-400: #94a3b8;
-  --color-500: #64748b;
-  --color-600: #475569;
   --color-700: #334155;
   --color-800: #1e293b;
-  --color-900: #0f172a;
-  --color-950: #020617;
   --color-highlight: #3ba3ff;
 }
 
 .app.nightMode {
   --color-0: black;
-  --color-50: #1e293b;
-  --color-100: #334155;
-  --color-200: #475569;
-  --color-300: #64748b;
-  --color-400: #94a3b8;
-  --color-500: #cbd5e1;
-  --color-600: #e2e8f0;
-  --color-700: #f1f5f9;
-  --color-800: #f8fafc;
-  --color-900: #ffffff;
-  --color-950: #ffffff;
-  --color-highlight: #71bdff;
+  --color-50: #1b222d; /* bgc */
+  --color-300: #64748b; /* borders and button hover */
+  --color-300: #42464b; /* borders and button hover */
+  --color-400: #94a3b8; /* secondary gray text, projects border hover */
+  --color-700: #f1f5f9; /* paragraph text */
+  --color-800: white; /* main text */
+  --color-highlight: #00c3ff;
 }
 
 .app {
@@ -94,11 +84,3 @@ svg {
   padding-top: 120px;
   gap: 100px;
 }
-
-/* background: rgb(214, 226, 255);
-  background: linear-gradient(
-    153deg,
-    rgb(188, 206, 255) 0%,
-    rgb(220, 249, 255) 10%,
-    rgba(248, 250, 252, 1) 30%
-  ); */
