@@ -16,13 +16,13 @@ const Intro = () => {
   return (
     <div className={styles.intro}>
       <div className={styles.profile}>
+        <img className={styles.profilePic} src="/images/profile-pic.jpg" />
         <h1>
           {hi[lang]},
           <img className={styles.hand} src="images/waving-hand-emoji.png" />
         </h1>
         <h1>{name[lang]}</h1>
         <h4>{profession[lang]}</h4>
-        <img className={styles.profilePic} src="/images/profile-pic.jpg" />
       </div>
 
       <div className={styles.bio}>
@@ -33,12 +33,10 @@ const Intro = () => {
             <p>{bio.p3[lang]}</p>
           </div>
         </Collapse>
-        <div className={styles.expandBioContainer}>
-          <button className={styles.expandBioButton} onClick={handleExpandBioClick}>
-            <ExpandIcon className={styles.expandIcon} isExpanded={isExpanded} />
-            {isExpanded ? collapseLabel[lang] : expandLabel[lang]}
-          </button>
-        </div>
+        <button className={styles.expandBioButton} onClick={handleExpandBioClick}>
+          <ExpandIcon className={styles.expandIcon} isExpanded={isExpanded} />
+          {isExpanded ? collapseLabel[lang] : expandLabel[lang]}
+        </button>
       </div>
     </div>
   );

@@ -6,7 +6,6 @@
 
   .profile {
     max-width: 500px;
-
     @include flex-column;
     gap: 10px;
 
@@ -26,25 +25,25 @@
       height: 130px;
       border-radius: 100%;
       border: 3px solid var(--color-700);
+
+      @media screen and (max-width: 580px) {
+        top: -60px;
+      }
     }
 
-    @media screen and (max-width: 558px) {
-      h1 {
-        font-size: 64px;
-      }
-
-      h4 {
-        font-size: 36px;
-      }
+    @media screen and (max-width: 494px) {
+      position: static;
 
       .profilePic {
-        top: -50px;
-        width: 110px;
-        height: 110px;
+        position: static;
+        right: auto;
+        top: auto;
+        align-self: center;
+        transform: translateY(-40px);
       }
     }
 
-    @media screen and (max-width: 380px) {
+    @media screen and (max-width: 401px) {
       h1 {
         font-size: 55px;
       }
@@ -53,35 +52,26 @@
         font-size: 30px;
       }
 
-      .profilePic {
-        width: 100px;
-        height: 100px;
-      }
-
       .hand {
         height: 50px;
-        width: auto;
+        width: 50px;
       }
     }
   }
 
   .bio {
     max-width: 800px;
+    @include flex-column;
 
     .expandedBio {
       @include flex-column;
       padding-top: 30px;
       gap: 30px;
     }
-  }
-
-  .expandBioContainer {
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
     .expandBioButton {
+      margin-top: 20px;
+      align-self: center;
       font-size: 16px;
       color: var(--color-400);
       cursor: pointer;
