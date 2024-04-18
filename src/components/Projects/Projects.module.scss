@@ -6,11 +6,16 @@
 }
 
 .projectsGallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  justify-content: center;
 
-  @media screen and (max-width: 791px) {
-    justify-content: center;
+  @media screen and (max-width: 1125px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media screen and (max-width: 738px) {
+    grid-template-columns: minmax(auto, 500px);
   }
 }

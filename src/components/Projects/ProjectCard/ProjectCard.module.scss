@@ -4,9 +4,9 @@
   @include flex-column;
   gap: 17px;
   justify-content: space-between;
-  max-width: 330px;
 
   .image {
+    max-width: 100%;
     cursor: pointer;
     border: 2px solid var(--color-200);
     border-radius: 10px;
