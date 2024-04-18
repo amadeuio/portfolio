@@ -6,6 +6,7 @@ import {
   ViteIcon,
   JestIcon,
   WebpackIcon,
+  ReactRouterIcon,
   GitIcon,
   BashIcon,
   LinuxIcon,
@@ -43,6 +44,10 @@ export const skillsData = [
   {
     icon: <WebpackIcon />,
     name: "Webpack",
+  },
+  {
+    icon: <ReactRouterIcon />,
+    name: "React Router",
   },
   {
     icon: <GitIcon />,
