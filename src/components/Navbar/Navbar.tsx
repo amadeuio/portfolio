@@ -12,7 +12,7 @@ const Navbar = () => {
       </div>
       <div className={styles.right}>
         <div className={styles.toggleLang} onClick={toggleLang}>
-          {lang.toUpperCase()}
+          {lang === "en" ? "ES" : "EN"}
         </div>
         <NightSwitch />
       </div>
