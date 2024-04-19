@@ -16,7 +16,7 @@ const Intro = () => {
   return (
     <div className={styles.intro}>
       <div className={styles.profile}>
-        <img className={styles.profilePic} src="/images/profile-pic.jpg" />
+        <img className={styles.profilePic} src="images/profile-pic.jpg" />
         <h1>
           {hi[lang]},
           <img className={styles.hand} src="images/waving-hand-emoji.png" />

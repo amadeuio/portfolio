@@ -16,7 +16,7 @@ const Footer = () => {
       </span>
 
       <a
-        href="https://github.com/amadeuio"
+        href="https://github.com/amadeuio/portfolio"
         className={styles.portfolioRepo}
         target="_blank"
         rel="noopener noreferrer">

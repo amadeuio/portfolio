@@ -33,7 +33,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
 
   return (
     <div className={styles.projectCard}>
-      <img src={`/images/${img}`} alt={name} className={styles.image} />
+      <a className={styles.link} href={demo} target="_blank" rel="noopener noreferrer">
+        <img src={`images/${img}`} alt={name} className={styles.image} />
+      </a>
       <div className={styles.projectInfo}>
         <h3>{name}</h3>
         <p className={styles.description}>{description[lang]}</p>

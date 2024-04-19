@@ -13,6 +13,7 @@
     display: flex;
     align-items: center;
     gap: 40px;
+    flex-wrap: wrap;
 
     .iconContainer {
       cursor: pointer;
@@ -42,11 +43,6 @@
     @media screen and (max-width: 791px) {
       justify-content: center;
       gap: 20px;
-    }
-
-    @media screen and (max-width: 419px) {
-      justify-content: space-around;
-      gap: 0px;
     }
   }
 }
