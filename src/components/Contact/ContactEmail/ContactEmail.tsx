@@ -4,7 +4,7 @@ import styles from "./ContactEmail.module.scss";
 
 const ContactEmail = () => {
   const [tooltipTitle, setTooltipTitle] = useState("");
-  const email = "hi@amadeu.io";
+  const email = "hello@amadeu.io";
 
   const copyToClipboard = async () => {
     try {

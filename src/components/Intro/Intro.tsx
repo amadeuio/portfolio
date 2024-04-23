@@ -26,12 +26,9 @@ const Intro = () => {
       </div>
 
       <div className={styles.bio}>
-        <p>{bio.p1[lang]}</p>
+        {bio.short[lang]}
         <Collapse isExpanded={isExpanded}>
-          <div className={styles.expandedBio}>
-            <p>{bio.p2[lang]}</p>
-            <p>{bio.p3[lang]}</p>
-          </div>
+          <div className={styles.expandedBio}>{bio.expanded[lang]}</div>
         </Collapse>
         <button className={styles.expandBioButton} onClick={handleExpandBioClick}>
           <ExpandIcon className={styles.expandIcon} isExpanded={isExpanded} />
