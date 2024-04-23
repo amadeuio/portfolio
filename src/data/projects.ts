@@ -20,7 +20,7 @@ const projects: Project[] = [
   {
     name: "Battleship",
     img: "battleship.png",
-    demo: "https://amadeuio.github.io/battleship",
+    demo: "https://battleshipgameapp.netlify.app",
     repo: "https://github.com/amadeuio/battleship",
     description: {
       en: "Battleship game with vanilla TypeScript",
@@ -30,7 +30,7 @@ const projects: Project[] = [
   {
     name: "Make Your CV",
     img: "make-your-cv.png",
-    demo: "https://amadeuio.github.io/make-your-cv",
+    demo: "https://makeyourresumeapp.netlify.app",
     repo: "https://github.com/amadeuio/make-your-cv",
     description: { en: "CV builder with React", es: "Creador de CV con React" },
   },
