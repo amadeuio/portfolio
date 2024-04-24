@@ -1,6 +1,5 @@
 import { useLangContext } from "../../context/LangContext";
 import { credits } from "../../data/locales";
-import GitHubIcon from "../../icons/GitHubIcon";
 import styles from "./Footer.module.scss";
 
 const Footer = () => {
