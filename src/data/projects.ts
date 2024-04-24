@@ -32,7 +32,10 @@ const projects: Project[] = [
     img: "make-your-cv.png",
     demo: "https://makeyourresumeapp.netlify.app",
     repo: "https://github.com/amadeuio/make-your-cv",
-    description: { en: "CV builder with React", es: "Creador de CV con React" },
+    description: {
+      en: "CV builder with React",
+      es: "Creador de currículum con React",
+    },
   },
 ];
 

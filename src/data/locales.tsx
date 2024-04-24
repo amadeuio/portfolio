@@ -25,8 +25,8 @@ export const bio = {
     es: (
       <p>
         Desarrollador frontend autodidacta de Barcelona con 2 años de experiencia en programación.
-        Busco escribir código simple y reutilizable, y destaco programando interfaces exactas,
-        responsive y user-friendly.
+        Busco escribir código simple y reutilizable, y tengo dominio programando interfaces
+        detalladas, responsive y user-friendly.
       </p>
     ),
   },
