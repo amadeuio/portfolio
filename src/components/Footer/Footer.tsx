@@ -15,14 +15,14 @@ const Footer = () => {
         </a>
       </span>
 
-      <a
+      {/* <a
         href="https://github.com/amadeuio/portfolio"
         className={styles.portfolioRepo}
         target="_blank"
         rel="noopener noreferrer">
         <GitHubIcon className={styles.gitHubIcon} />
         Portfolio Repo
-      </a>
+      </a> */}
     </footer>
   );
 };
