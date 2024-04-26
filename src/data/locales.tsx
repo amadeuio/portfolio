@@ -44,9 +44,12 @@ export const bio = {
         </p>
         <p>
           Over the last two years, I've been self-teaching my way through the The Odin Project, and
-          recently gotten my first freelance gigs for Bambuda. I'm excited to keep expanding my
-          knowledge and skills, hop on a professional development team, and collaborate to create
-          amazing stuff. Let's work together!
+          recently gotten my first freelance gigs for{" "}
+          <a href="https://bambuda.com" target="_blank" rel="noopener noreferrer">
+            Bambuda
+          </a>
+          . I'm excited to keep expanding my knowledge and skills, hop on a professional development
+          team, and collaborate to create amazing stuff. Let's work together!
         </p>
       </>
     ),
@@ -65,9 +68,12 @@ export const bio = {
         </p>
         <p>
           Durante los últimos dos años, he estado estudiando en The Odin Project, y hace poco
-          conseguí mis primeros trabajos freelance para Bambuda. Me motiva seguir ampliando mis
-          conocimientos y habilidades, unirme a un equipo profesional y colaborar para crear cosas
-          increíbles. ¡Trabajemos juntos!
+          conseguí mis primeros trabajos freelance para{" "}
+          <a href="https://bambuda.com" target="_blank" rel="noopener noreferrer">
+            Bambuda
+          </a>
+          . Me motiva seguir ampliando mis conocimientos y habilidades, unirme a un equipo
+          profesional y colaborar para crear cosas increíbles. ¡Trabajemos juntos!
         </p>
       </>
     ),
