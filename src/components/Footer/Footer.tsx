@@ -1,4 +1,5 @@
 import { useLangContext } from "../../context/LangContext";
+import GitHubIcon from "../../icons/GitHubIcon";
 import { credits } from "../../data/locales";
 import styles from "./Footer.module.scss";
 
@@ -14,14 +15,14 @@ const Footer = () => {
         </a>
       </span>
 
-      {/* <a
+      <a
         href="https://github.com/amadeuio/portfolio"
         className={styles.portfolioRepo}
         target="_blank"
         rel="noopener noreferrer">
         <GitHubIcon className={styles.gitHubIcon} />
         Portfolio Repo
-      </a> */}
+      </a>
     </footer>
   );
 };
