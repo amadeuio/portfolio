@@ -14,6 +14,9 @@ import {
   RestApiIcon,
   HtmlIcon,
   DataStructuresIcon,
+  TailwindIcon,
+  ReduxIcon,
+  NextIcon,
 } from "./SkillsIcons";
 
 export const skillsData = [
@@ -36,6 +39,18 @@ export const skillsData = [
   {
     icon: <ViteIcon />,
     name: "Vite",
+  },
+  {
+    icon: <TailwindIcon />,
+    name: "Tailwind",
+  },
+  {
+    icon: <ReduxIcon />,
+    name: "Redux",
+  },
+  {
+    icon: <NextIcon />,
+    name: "Next",
   },
   {
     icon: <JestIcon />,
