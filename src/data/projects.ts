@@ -3,7 +3,7 @@ export interface Project {
   img: string;
   demo: string;
   repo: string;
-  description: object;
+  descriptionKey: string;
 }
 
 const projects: Project[] = [
@@ -12,30 +12,21 @@ const projects: Project[] = [
     img: "fruits-store.png",
     demo: "https://fruitsstoremarket.netlify.app",
     repo: "https://github.com/amadeuio/fruits-store",
-    description: {
-      en: "Static e-commerce store with React",
-      es: "Tienda e-commerce estática con React",
-    },
+    descriptionKey: "projects.fruitsStore",
   },
   {
     name: "Battleship",
     img: "battleship.png",
     demo: "https://battleshipgameapp.netlify.app",
     repo: "https://github.com/amadeuio/battleship",
-    description: {
-      en: "Battleship game with vanilla TypeScript",
-      es: "Juego de Battleship con vanilla TypeScript",
-    },
+    descriptionKey: "projects.battleship",
   },
   {
     name: "Make Your CV",
     img: "make-your-cv.png",
     demo: "https://makeyourresumeapp.netlify.app",
     repo: "https://github.com/amadeuio/make-your-cv",
-    description: {
-      en: "CV builder with React",
-      es: "Creador de currículum con React",
-    },
+    descriptionKey: "projects.makeYourCv",
   },
 ];
 

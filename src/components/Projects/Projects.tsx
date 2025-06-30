@@ -1,15 +1,14 @@
 import styles from "./Projects.module.scss";
 import projects from "../../data/projects";
 import ProjectCard from "./ProjectCard/ProjectCard";
-import { projectsTitle } from "../../data/locales";
-import { useLangContext } from "../../context/LangContext";
+import { useTranslation } from "react-i18next";
 
 const Projects = () => {
-  const { lang } = useLangContext();
+  const { t } = useTranslation();
 
   return (
     <div className={styles.projects}>
-      <h2>{projectsTitle[lang]}</h2>
+      <h2>{t("projectsTitle")}</h2>
       <div className={styles.projectsGallery}>
         {projects.map((project, index) => (
           <ProjectCard key={index} project={project} />

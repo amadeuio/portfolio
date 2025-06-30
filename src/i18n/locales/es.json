@@ -1,0 +1,25 @@
+{
+  "hi": "Hola",
+  "name": "Soy Amadeu",
+  "profession": "Desarrollador Frontend",
+  "bio": {
+    "short": "Desarrollador frontend autodidacta de Barcelona con más de 2 años de experiencia especializado en React. Busco escribir código simple y de calidad, y tengo dominio programando interfaces detalladas, responsive y user-friendly.",
+    "expanded": {
+      "paragraph1": "Desde hacer jailbreak a iPhones de mis amigos en la ESO para jugar juegos de Pokémon de Game Boy, hasta más tarde estudiar Física, siempre he tenido una inclinación por temas técnicos.",
+      "paragraph2": "Me he pasado los últimos años de mi vida viviendo fuera, principalmente en Centroamérica, haciendo trabajos de hostelería y voluntariados, periodo que ha sido muy transformador y donde surgió por primera vez la idea de convertirme en programador.",
+      "paragraph3": "Estoy motivado en seguir ampliando mis conocimientos y habilidades, y colaborar para crear cosas geniales. Trabajemos juntos! 🚀"
+    }
+  },
+  "expandLabel": "Expandir Bio",
+  "collapseLabel": "Colapsar Bio",
+  "projectsTitle": "Proyectos",
+  "skillsTitle": "Conocimientos",
+  "contact": "Contacto",
+  "contactDescription": "Escríbeme un email y responderé en 1 o 2 días!",
+  "credits": "Proyectos y portafolio programados 👨🏻‍💻 por",
+  "projects": {
+    "fruitsStore": "Tienda e-commerce estática con React",
+    "battleship": "Juego de Battleship con vanilla TypeScript",
+    "makeYourCv": "Creador de currículum con React"
+  }
+}

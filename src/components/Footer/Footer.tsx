@@ -1,15 +1,14 @@
-import { useLangContext } from "../../context/LangContext";
+import { useTranslation } from "react-i18next";
 import GitHubIcon from "../../icons/GitHubIcon";
-import { credits } from "../../data/locales";
 import styles from "./Footer.module.scss";
 
 const Footer = () => {
-  const { lang } = useLangContext();
+  const { t } = useTranslation();
 
   return (
     <footer className={styles.footer}>
       <span className={styles.credits}>
-        {credits[lang]}{" "}
+        {t("credits")}{" "}
         <a href="https://github.com/amadeuio" target="_blank" rel="noopener noreferrer">
           @amadeuio
         </a>
