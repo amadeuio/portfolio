@@ -1,0 +1,25 @@
+{
+  "hi": "Hi",
+  "name": "I'm Amadeu",
+  "profession": "Frontend Developer",
+  "bio": {
+    "short": "Self-taught frontend developer from Barcelona with over 2 years of experience specializing in React. I strive for simple and high quality code, and excel at coding accurate, responsive and friendly UIs.",
+    "expanded": {
+      "paragraph1": "From jailbreaking my friends iPhones in High School to play Game Boy Pokemon games, to later on studying Physics, I've always had a leaning towards technical related topics.",
+      "paragraph2": "I have spent the last years of my life living abroad, mostly in Central America, doing extensive hospitality work and volunteerings, time that has been very transformative, and where the idea of becoming a developer first arised.",
+      "paragraph3": "I'm excited to keep expanding my knowledge and skills, and collaborate to create amazing stuff. Let's work together! 🚀"
+    }
+  },
+  "expandLabel": "Expand Bio",
+  "collapseLabel": "Collapse Bio",
+  "projectsTitle": "Projects",
+  "skillsTitle": "Skills",
+  "contact": "Contact",
+  "contactDescription": "Drop me an email and I will get back to you in 1 or 2 days!",
+  "credits": "All projects and portfolio coded from scratch 👨🏻‍💻 by",
+  "projects": {
+    "fruitsStore": "Static e-commerce store with React",
+    "battleship": "Battleship game with vanilla TypeScript",
+    "makeYourCv": "CV builder with React"
+  }
+}

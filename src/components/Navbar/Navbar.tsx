@@ -1,9 +1,13 @@
-import { useLangContext } from "../../context/LangContext";
+import { useTranslation } from "react-i18next";
 import NightSwitch from "./NightSwitch/NightSwitch";
 import styles from "./Navbar.module.scss";
 
 const Navbar = () => {
-  const { lang, toggleLang } = useLangContext();
+  const { i18n } = useTranslation();
+
+  const toggleLang = () => {
+    i18n.changeLanguage(i18n.language === "en" ? "es" : "en");
+  };
 
   return (
     <nav className={styles.navbar}>
@@ -12,7 +16,7 @@ const Navbar = () => {
       </div>
       <div className={styles.right}>
         <div className={styles.toggleLang} onClick={toggleLang}>
-          {lang === "en" ? "ES" : "EN"}
+          {i18n.language === "en" ? "ES" : "EN"}
         </div>
         <NightSwitch />
       </div>

@@ -2,7 +2,7 @@ import styles from "./ProjectCard.module.scss";
 import { Project } from "../../../data/projects";
 import GitHubIcon from "../../../icons/GitHubIcon";
 import EyeIcon from "../../../icons/EyeIcon";
-import { useLangContext } from "../../../context/LangContext";
+import { useTranslation } from "react-i18next";
 
 interface ButtonProps {
   label: "Demo" | "Repo";
@@ -28,8 +28,8 @@ interface ProjectCardProps {
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
-  const { name, img, demo, repo, description } = project;
-  const { lang } = useLangContext();
+  const { name, img, demo, repo, descriptionKey } = project;
+  const { t } = useTranslation();
 
   return (
     <div className={styles.projectCard}>
@@ -38,7 +38,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
       </a>
       <div className={styles.projectInfo}>
         <h3>{name}</h3>
-        <p className={styles.description}>{description[lang]}</p>
+        <p className={styles.description}>{t(descriptionKey)}</p>
       </div>
       <div className={styles.buttons}>
         <a className={styles.link} href={demo} target="_blank" rel="noopener noreferrer">

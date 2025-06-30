@@ -2,11 +2,10 @@ import styles from "./Intro.module.scss";
 import ExpandIcon from "../../icons/ExpandIcon";
 import Collapse from "./Collapse/Collapse";
 import { useState } from "react";
-import { hi, name, profession, bio, expandLabel, collapseLabel } from "../../data/locales";
-import { useLangContext } from "../../context/LangContext";
+import { useTranslation } from "react-i18next";
 
 const Intro = () => {
-  const { lang } = useLangContext();
+  const { t } = useTranslation();
   const [isExpanded, setIsExpanded] = useState(false);
 
   const handleExpandBioClick = () => {
@@ -18,21 +17,28 @@ const Intro = () => {
       <div className={styles.profile}>
         <img className={styles.profilePic} src="images/profile-pic.jpg" />
         <h1>
-          {hi[lang]},
+          {t("hi")},
           <img className={styles.hand} src="images/waving-hand-emoji.png" />
         </h1>
-        <h1>{name[lang]}</h1>
-        <h4>{profession[lang]}</h4>
+        <h1>{t("name")}</h1>
+        <h4>{t("profession")}</h4>
       </div>
 
       <div className={styles.bio}>
-        {bio.short[lang]}
+        <p>{t("bio.short")}</p>
         <Collapse isExpanded={isExpanded}>
-          <div className={styles.expandedBio}>{bio.expanded[lang]}</div>
+          <div className={styles.expandedBio}>
+            <p>{t("bio.expanded.paragraph1")}</p>
+            <p>{t("bio.expanded.paragraph2")}</p>
+            <p>{t("bio.expanded.paragraph3")}</p>
+          </div>
         </Collapse>
-        <button className={styles.expandBioButton} onClick={handleExpandBioClick}>
+        <button
+          className={styles.expandBioButton}
+          onClick={handleExpandBioClick}
+        >
           <ExpandIcon className={styles.expandIcon} isExpanded={isExpanded} />
-          {isExpanded ? collapseLabel[lang] : expandLabel[lang]}
+          {isExpanded ? t("collapseLabel") : t("expandLabel")}
         </button>
       </div>
     </div>
