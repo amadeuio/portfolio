@@ -1,4 +1,5 @@
 ![Stack](https://img.shields.io/badge/Stack-React_|_TypeScript-149eca)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c7d84bf3-e09b-4290-9168-a38ade1abbc4/deploy-status)](https://app.netlify.com/projects/portfolio-amadeuio/deploys) 
 ![License](https://img.shields.io/badge/License-MIT-green)
 
 # Portfolio
@@ -11,7 +12,7 @@ My personal portfolio page with TypeScript and React.
   <img src="public/screenshots/screenshot.png" width="650px" alt="screenshot">
 </p>
 <h2 align="center">
-  <a href="https://amadeu.io">👉 amadeu.io</a>
+  <a href="https://portfolio-amadeuio.netlify.app/">👉 amadeu.io</a>
 </h2>
 
 ## About
