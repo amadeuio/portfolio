@@ -1,21 +1,21 @@
-import styles from "./ProjectCard.module.scss";
-import { Project } from "../../../data/projects";
-import GitHubIcon from "../../../icons/GitHubIcon";
-import EyeIcon from "../../../icons/EyeIcon";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from 'react-i18next';
+import { Project } from '../../../data/projects';
+import EyeIcon from '../../../icons/EyeIcon';
+import GitHubIcon from '../../../icons/GitHubIcon';
+import styles from './ProjectCard.module.scss';
 
 interface ButtonProps {
-  label: "Demo" | "Repo";
+  label: 'Demo' | 'Repo';
 }
 
 const ProjectButton: React.FC<ButtonProps> = ({ label }) => {
-  const demo = label === "Demo";
+  const demo = label === 'Demo';
 
   return (
-    <button className={`${styles.button} ${demo ? styles.demo : ""}`}>
+    <button className={`${styles.button} ${demo ? styles.demo : ''}`}>
       {demo ? (
         <EyeIcon className={styles.eyeIcon} />
-      ) : label === "Repo" ? (
+      ) : label === 'Repo' ? (
         <GitHubIcon className={styles.gitHubIcon} />
       ) : null}
       {label}
@@ -42,10 +42,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
       </div>
       <div className={styles.buttons}>
         <a className={styles.link} href={demo} target="_blank" rel="noopener noreferrer">
-          <ProjectButton label={"Demo"} />
+          <ProjectButton label={'Demo'} />
         </a>
         <a className={styles.link} href={repo} target="_blank" rel="noopener noreferrer">
-          <ProjectButton label={"Repo"} />
+          <ProjectButton label={'Repo'} />
         </a>
       </div>
     </div>

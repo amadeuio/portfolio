@@ -1,4 +1,4 @@
-@import "../../../globalStyles/mixins";
+@import '../../../globalStyles/mixins';
 
 .projectCard {
   @include flex-column;
@@ -44,7 +44,9 @@
   border: 1px solid var(--color-300);
   border-radius: 5px;
   padding: 12px 18px;
-  transition: background-color 0.1s ease, border-color 0.1s ease;
+  transition:
+    background-color 0.1s ease,
+    border-color 0.1s ease;
 
   &:hover {
     background-color: var(--color-300);
