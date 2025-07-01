@@ -1,23 +1,23 @@
-import { useState } from "react";
-import Tooltip from "@mui/material/Tooltip";
-import styles from "./ContactEmail.module.scss";
+import Tooltip from '@mui/material/Tooltip';
+import { useState } from 'react';
+import styles from './ContactEmail.module.scss';
 
 const ContactEmail = () => {
-  const [tooltipTitle, setTooltipTitle] = useState("");
-  const email = "amadeuserras@gmail.com";
+  const [tooltipTitle, setTooltipTitle] = useState('');
+  const email = 'amadeuserras@gmail.com';
 
   const copyToClipboard = async () => {
     try {
       await navigator.clipboard.writeText(email);
-      setTooltipTitle("Copied!");
+      setTooltipTitle('Copied!');
     } catch (error) {
-      console.error("Error copying to clipboard:", error);
-      setTooltipTitle("Error copying to clipboard");
+      console.error('Error copying to clipboard:', error);
+      setTooltipTitle('Error copying to clipboard');
     }
   };
 
   const handleTooltipOpen = () => {
-    setTooltipTitle("Click to Copy");
+    setTooltipTitle('Click to Copy');
   };
 
   return (
@@ -26,7 +26,7 @@ const ContactEmail = () => {
         tooltip: {
           sx: {
             padding: 1.3,
-            fontFamily: "Helvetica, Arial, sans-serif",
+            fontFamily: 'Helvetica, Arial, sans-serif',
             fontSize: 11,
           },
         },
@@ -34,7 +34,8 @@ const ContactEmail = () => {
       placement="top"
       onOpen={handleTooltipOpen}
       title={tooltipTitle}
-      arrow>
+      arrow
+    >
       <span className={styles.email} onClick={copyToClipboard}>
         {email}
       </span>

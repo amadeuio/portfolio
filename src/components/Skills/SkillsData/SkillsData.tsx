@@ -1,95 +1,95 @@
 import {
-  ReactIcon,
-  TypeScriptIcon,
-  CSSIcon,
-  NodeJSIcon,
-  ViteIcon,
-  JestIcon,
-  WebpackIcon,
-  ReactRouterIcon,
-  GitIcon,
   BashIcon,
-  LinuxIcon,
+  CSSIcon,
   CSSInJsIcon,
-  RestApiIcon,
-  HtmlIcon,
   DataStructuresIcon,
-  TailwindIcon,
-  ReduxIcon,
+  GitIcon,
+  HtmlIcon,
+  JestIcon,
+  LinuxIcon,
   NextIcon,
-} from "./SkillsIcons";
+  NodeJSIcon,
+  ReactIcon,
+  ReactRouterIcon,
+  ReduxIcon,
+  RestApiIcon,
+  TailwindIcon,
+  TypeScriptIcon,
+  ViteIcon,
+  WebpackIcon,
+} from './SkillsIcons';
 
 export const skillsData = [
   {
     icon: <ReactIcon />,
-    name: "React",
+    name: 'React',
   },
   {
     icon: <TypeScriptIcon />,
-    name: "TypeScript / JavaScript",
+    name: 'TypeScript / JavaScript',
   },
   {
     icon: <CSSIcon />,
-    name: "CSS / SASS",
+    name: 'CSS / SASS',
   },
   {
     icon: <NodeJSIcon />,
-    name: "NodeJS",
+    name: 'NodeJS',
   },
   {
     icon: <ViteIcon />,
-    name: "Vite",
+    name: 'Vite',
   },
   {
     icon: <TailwindIcon />,
-    name: "Tailwind",
+    name: 'Tailwind',
   },
   {
     icon: <ReduxIcon />,
-    name: "Redux",
+    name: 'Redux',
   },
   {
     icon: <NextIcon />,
-    name: "Next",
+    name: 'Next',
   },
   {
     icon: <JestIcon />,
-    name: "Jest",
+    name: 'Jest',
   },
   {
     icon: <WebpackIcon />,
-    name: "Webpack",
+    name: 'Webpack',
   },
   {
     icon: <ReactRouterIcon />,
-    name: "React Router",
+    name: 'React Router',
   },
   {
     icon: <GitIcon />,
-    name: "Git",
+    name: 'Git',
   },
   {
     icon: <BashIcon />,
-    name: "Bash",
+    name: 'Bash',
   },
   {
     icon: <LinuxIcon />,
-    name: "Linux",
+    name: 'Linux',
   },
   {
     icon: <CSSInJsIcon />,
-    name: "CSS-in-JS",
+    name: 'CSS-in-JS',
   },
   {
     icon: <RestApiIcon />,
-    name: "REST APIs",
+    name: 'REST APIs',
   },
   {
     icon: <HtmlIcon />,
-    name: "HTML",
+    name: 'HTML',
   },
   {
     icon: <DataStructuresIcon />,
-    name: "Data Structures",
+    name: 'Data Structures',
   },
 ];

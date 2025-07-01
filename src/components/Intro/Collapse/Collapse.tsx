@@ -1,6 +1,5 @@
-import { useRef } from "react";
-import { useEffect, useState } from "react";
-import styles from "./Collapse.module.scss";
+import { useEffect, useRef, useState } from 'react';
+import styles from './Collapse.module.scss';
 
 // Utility component that collapses or expands children passed to it, based on the isExpanded boolean
 // Solves the problem of having to use fixed height for animations, thanks to calculating the height in JS
@@ -16,10 +15,10 @@ const Collapse = ({ isExpanded, children }) => {
     };
 
     updateHeight();
-    window.addEventListener("resize", updateHeight);
+    window.addEventListener('resize', updateHeight);
 
     return () => {
-      window.removeEventListener("resize", updateHeight);
+      window.removeEventListener('resize', updateHeight);
     };
   }, [children]);
 
@@ -28,7 +27,8 @@ const Collapse = ({ isExpanded, children }) => {
       className={styles.collapse}
       style={{
         maxHeight: isExpanded ? contentHeight : 0,
-      }}>
+      }}
+    >
       <div ref={ref}>{children}</div>
     </div>
   );

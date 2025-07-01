@@ -1,4 +1,4 @@
-import { createContext, useState, useContext, ReactNode } from "react";
+import { ReactNode, createContext, useContext, useState } from 'react';
 
 type ToggleLang = () => void;
 
@@ -19,10 +19,10 @@ export const useLangContext = () => {
 };
 
 export const LangContextProvider: React.FC<LangContextProviderProps> = ({ children }) => {
-  const [lang, setLang] = useState<string>("en");
+  const [lang, setLang] = useState<string>('en');
 
   const toggleLang = () => {
-    setLang(lang === "en" ? "es" : "en");
+    setLang(lang === 'en' ? 'es' : 'en');
   };
 
   return <LangContext.Provider value={{ lang, toggleLang }}>{children}</LangContext.Provider>;

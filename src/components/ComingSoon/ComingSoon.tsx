@@ -1,4 +1,4 @@
-import styles from "./ComingSoon.module.scss";
+import styles from './ComingSoon.module.scss';
 
 const ComingSoon = () => {
   return (
@@ -14,7 +14,8 @@ const ComingSoon = () => {
             <a
               href="https://github.com/amadeuio/fruits-store"
               target="_blank"
-              rel="noopener noreferrer">
+              rel="noopener noreferrer"
+            >
               Fruits Store
             </a>
           </li>
@@ -22,7 +23,8 @@ const ComingSoon = () => {
             <a
               href="https://github.com/amadeuio/make-your-cv"
               target="_blank"
-              rel="noopener noreferrer">
+              rel="noopener noreferrer"
+            >
               Make Your CV
             </a>
           </li>
@@ -30,7 +32,8 @@ const ComingSoon = () => {
             <a
               href="https://github.com/amadeuio/battleship"
               target="_blank"
-              rel="noopener noreferrer">
+              rel="noopener noreferrer"
+            >
               Battleship
             </a>
           </li>
