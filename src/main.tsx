@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App.tsx';
 import { NightModeContextProvider } from './context/NightModeContext';
-import './globalStyles/reset.scss';
 import './i18n';
 import './index.css';
 
