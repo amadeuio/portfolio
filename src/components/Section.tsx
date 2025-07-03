@@ -8,7 +8,7 @@ interface SectionProps {
   children: React.ReactNode;
 }
 
-const Section = ({ title, level = 2, className = '', children }: SectionProps) => (
+const Section = ({ title, level = 2, className, children }: SectionProps) => (
   <section className={cn('flex flex-col gap-y-8', className)}>
     <Title level={level}>{title}</Title>
     <div>{children}</div>

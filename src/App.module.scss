@@ -23,7 +23,7 @@
 }
 
 .app {
-  font-family: 'Inter', Helvetica, sans-serif;
+  /* font-family: 'Inter', Helvetica, sans-serif; */
   font-size: 16px;
   color: var(--color-800);
   background-color: var(--color-50);
@@ -47,20 +47,20 @@
     box-sizing: border-box;
   }
 
-  p {
+  /* p {
     color: var(--color-700);
     line-height: 1.8;
-  }
+  } */
 
   a {
     color: var(--color-highlight);
   }
 
-  h1 {
+  /* h1 {
     font-size: 70px;
     letter-spacing: -3.7px;
     font-weight: 600;
-  }
+  } */
 
   h2 {
     font-size: 40px;
@@ -74,10 +74,10 @@
     letter-spacing: -0.3px;
   }
 
-  h4 {
+  /* h4 {
     font-size: 40px;
     font-weight: 300;
     color: var(--color-highlight);
     letter-spacing: -1px;
-  }
+  } */
 }
