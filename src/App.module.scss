@@ -22,8 +22,8 @@
   --color-highlight: #00c3ff;
 }
 
-.app {
-  /* font-family: 'Inter', Helvetica, sans-serif; */
+/* .app {
+  font-family: 'Inter', Helvetica, sans-serif;
   font-size: 16px;
   color: var(--color-800);
   background-color: var(--color-50);
@@ -31,7 +31,7 @@
   @include flex-column;
   align-items: center;
   padding: 0 40px;
-  overflow-x: hidden; /* hack */
+  overflow-x: hidden;
 
   @media screen and (max-width: 494px) {
     padding: 0 20px;
@@ -47,37 +47,37 @@
     box-sizing: border-box;
   }
 
-  /* p {
+  p {
     color: var(--color-700);
     line-height: 1.8;
-  } */
+  }
 
   a {
     color: var(--color-highlight);
   }
 
-  /* h1 {
+  h1 {
     font-size: 70px;
     letter-spacing: -3.7px;
     font-weight: 600;
-  } */
-
-  h2 {
-    font-size: 40px;
-    letter-spacing: -2.6px;
-    font-weight: 600;
   }
 
-  h3 {
-    font-size: 20px;
-    font-weight: 600;
-    letter-spacing: -0.3px;
-  }
-
-  /* h4 {
+   h4 {
     font-size: 40px;
     font-weight: 300;
     color: var(--color-highlight);
     letter-spacing: -1px;
-  } */
+  }
+} */
+
+h2 {
+  font-size: 40px;
+  letter-spacing: -2.6px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: -0.3px;
 }
