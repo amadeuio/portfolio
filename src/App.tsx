@@ -13,7 +13,7 @@ const App = () => {
   return (
     <div
       className={cn(
-        'text-primary bg-background box-border flex min-h-screen flex-col items-center overflow-x-hidden px-10 text-base transition-colors duration-200',
+        'text-primary bg-background box-border flex flex-col items-center px-10 transition-[background-color] duration-200 max-[494px]:px-5',
         isNightMode ? 'dark' : '',
       )}
     >
