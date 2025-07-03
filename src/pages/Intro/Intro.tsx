@@ -1,8 +1,9 @@
+import { Paragraph, ProfilePicture, Title } from '@/components';
+import { cn } from '@/utils/cn';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import ExpandIcon from '../../icons/ExpandIcon';
 import Collapse from './Collapse/Collapse';
-import styles from './Intro.module.scss';
 
 const Intro = () => {
   const { t } = useTranslation();
@@ -13,28 +14,42 @@ const Intro = () => {
   };
 
   return (
-    <div className={styles.intro}>
-      <div className={styles.profile}>
-        <img className={styles.profilePic} src="images/profile-pic.jpg" />
-        <h1>
-          {t('hi')},
-          <img className={styles.hand} src="images/waving-hand-emoji.png" />
-        </h1>
-        <h1>{t('name')}</h1>
-        <h4>{t('profession')}</h4>
+    <div className="flex flex-col gap-8">
+      <div className="relative flex max-w-lg flex-col gap-2">
+        <ProfilePicture
+          className={cn(
+            'absolute -top-8 right-0',
+            'max-[580px]:-top-16',
+            'max-[494px]:static max-[494px]:top-auto max-[494px]:right-auto max-[494px]:translate-y-[-10] max-[494px]:self-center',
+          )}
+        />
+        <div className="flex items-center gap-x-4">
+          <Title level={1}>{t('hi')},</Title>
+          <img className="h-16 w-16" src="images/waving-hand-emoji.png" />
+        </div>
+        <Title level={1} className="max-[419px]:text-5xl">
+          {t('name')}
+        </Title>
+
+        <span className="text-accent text-4xl font-light tracking-tight max-[419px]:text-3xl">
+          {t('profession')}
+        </span>
       </div>
 
-      <div className={styles.bio}>
-        <p>{t('bio.short')}</p>
+      <div className="flex max-w-3xl flex-col">
+        <Paragraph>{t('bio.short')}</Paragraph>
         <Collapse isExpanded={isExpanded}>
-          <div className={styles.expandedBio}>
-            <p>{t('bio.expanded.paragraph1')}</p>
-            <p>{t('bio.expanded.paragraph2')}</p>
-            <p>{t('bio.expanded.paragraph3')}</p>
+          <div className="flex flex-col gap-8 pt-8">
+            <Paragraph>{t('bio.expanded.paragraph1')}</Paragraph>
+            <Paragraph>{t('bio.expanded.paragraph2')}</Paragraph>
+            <Paragraph>{t('bio.expanded.paragraph3')}</Paragraph>
           </div>
         </Collapse>
-        <button className={styles.expandBioButton} onClick={handleExpandBioClick}>
-          <ExpandIcon className={styles.expandIcon} isExpanded={isExpanded} />
+        <button
+          className="text-tertiary mt-5 flex cursor-pointer items-center justify-start gap-2.5 self-center"
+          onClick={handleExpandBioClick}
+        >
+          <ExpandIcon className="fill-tertiary h-5 w-5" isExpanded={isExpanded} />
           {isExpanded ? t('collapseLabel') : t('expandLabel')}
         </button>
       </div>
