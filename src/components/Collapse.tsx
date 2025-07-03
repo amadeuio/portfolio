@@ -1,8 +1,8 @@
 import { useEffect, useRef, useState } from 'react';
-import styles from './Collapse.module.scss';
 
-// Utility component that collapses or expands children passed to it, based on the isExpanded boolean
-// Solves the problem of having to use fixed height for animations, thanks to calculating the height in JS
+/* Utility component that collapses or expands children based on isExpanded. Solves having to use
+fixed height for animations, thanks to automatically calculating the content height in JS. */
+
 const Collapse = ({ isExpanded, children }) => {
   const ref = useRef<HTMLDivElement>(null);
   const [contentHeight, setContentHeight] = useState(0);
@@ -24,7 +24,7 @@ const Collapse = ({ isExpanded, children }) => {
 
   return (
     <div
-      className={styles.collapse}
+      className="overflow-hidden transition-[max-height] duration-250 ease-in-out"
       style={{
         maxHeight: isExpanded ? contentHeight : 0,
       }}

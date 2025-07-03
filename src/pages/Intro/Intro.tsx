@@ -1,9 +1,8 @@
-import { Paragraph, ProfilePicture, Title } from '@/components';
+import { Collapse, Paragraph, ProfilePicture, Title } from '@/components';
 import { cn } from '@/utils/cn';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import ExpandIcon from '../../icons/ExpandIcon';
-import Collapse from './Collapse/Collapse';
 
 const Intro = () => {
   const { t } = useTranslation();
