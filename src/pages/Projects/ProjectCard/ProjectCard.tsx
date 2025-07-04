@@ -1,9 +1,8 @@
-import { useTranslation } from 'react-i18next';
 import { Link } from '@/components';
+import { useTranslation } from 'react-i18next';
 import { Project } from '../../../data/projects';
 import EyeIcon from '../../../icons/EyeIcon';
 import GitHubIcon from '../../../icons/GitHubIcon';
-import styles from './ProjectCard.module.scss';
 
 interface ButtonProps {
   label: 'Demo' | 'Repo';
@@ -13,11 +12,11 @@ const ProjectButton: React.FC<ButtonProps> = ({ label }) => {
   const demo = label === 'Demo';
 
   return (
-    <button className={`${styles.button} ${demo ? styles.demo : ''}`}>
+    <button className="text-primary border-border hover:bg-border flex cursor-pointer items-center justify-center gap-2 rounded-md border px-4.5 py-3 text-sm transition-colors duration-100">
       {demo ? (
-        <EyeIcon className={styles.eyeIcon} />
+        <EyeIcon className="fill-primary h-5 w-5" />
       ) : label === 'Repo' ? (
-        <GitHubIcon className={styles.gitHubIcon} />
+        <GitHubIcon className="stroke-primary h-5 w-5" />
       ) : null}
       {label}
     </button>
@@ -33,19 +32,23 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   const { t } = useTranslation();
 
   return (
-    <div className={styles.projectCard}>
-      <Link className={styles.link} href={demo}>
-        <img src={`images/${img}`} alt={name} className={styles.image} />
+    <div className="flex flex-col justify-between gap-4">
+      <Link href={demo}>
+        <img
+          src={`images/${img}`}
+          alt={name}
+          className="hover:border-tertiary max-w-full cursor-pointer rounded-lg border-2 border-200 transition-transform duration-200 hover:scale-104"
+        />
       </Link>
-      <div className={styles.projectInfo}>
+      <div className="flex flex-col gap-1">
         <h3>{name}</h3>
-        <p className={styles.description}>{t(descriptionKey)}</p>
+        <p className="text-tertiary">{t(descriptionKey)}</p>
       </div>
-      <div className={styles.buttons}>
-        <Link className={styles.link} href={demo}>
+      <div className="flex gap-x-2">
+        <Link href={demo}>
           <ProjectButton label={'Demo'} />
         </Link>
-        <Link className={styles.link} href={repo}>
+        <Link href={repo}>
           <ProjectButton label={'Repo'} />
         </Link>
       </div>
