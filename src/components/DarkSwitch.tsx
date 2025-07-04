@@ -13,7 +13,7 @@ const NightIcon = ({ className }: { className?: string }) => (
   </svg>
 );
 
-const NightSwitch = () => {
+const DarkSwitch = () => {
   const { isNightMode, toggleNightMode } = useNightModeContext();
 
   return (
@@ -36,4 +36,4 @@ const NightSwitch = () => {
   );
 };
 
-export default NightSwitch;
+export default DarkSwitch; 

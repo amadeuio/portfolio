@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import NightSwitch from './NightSwitch/NightSwitch';
+import { DarkSwitch } from '@/components';
 
 const Navbar = () => {
   const { i18n } = useTranslation();
@@ -17,7 +17,7 @@ const Navbar = () => {
         <div className="text-tertiary w-[23px] cursor-pointer" onClick={handleLanguageClick}>
           {i18n.language === 'en' ? 'ES' : 'EN'}
         </div>
-        <NightSwitch />
+        <DarkSwitch />
       </div>
     </nav>
   );
