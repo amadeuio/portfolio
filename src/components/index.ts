@@ -1,4 +1,5 @@
 export { default as Collapse } from './Collapse';
+export { default as ContactLink } from './ContactLink';
 export { default as DarkSwitch } from './DarkSwitch';
 export { default as Link } from './Link';
 export { default as Paragraph } from './Paragraph';
