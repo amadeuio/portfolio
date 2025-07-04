@@ -1,6 +1,5 @@
 import Tooltip from '@mui/material/Tooltip';
 import { useState } from 'react';
-import styles from './ContactEmail.module.scss';
 
 const ContactEmail = () => {
   const [tooltipTitle, setTooltipTitle] = useState('');
@@ -36,7 +35,10 @@ const ContactEmail = () => {
       title={tooltipTitle}
       arrow
     >
-      <span className={styles.email} onClick={copyToClipboard}>
+      <span
+        className="border-border bg-absolute cursor-pointer rounded-sm border p-2 font-mono text-sm"
+        onClick={copyToClipboard}
+      >
         {email}
       </span>
     </Tooltip>

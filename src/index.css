@@ -4,6 +4,7 @@
   --font-sans: 'Inter', Helvetica, sans-serif;
 
   /* Light mode colors */
+  --color-absolute: white;
   --color-primary: #1e293b;
   --color-secondary: #334155;
   --color-tertiary: #94a3b8;
@@ -12,6 +13,7 @@
   --color-accent: #3ba3ff;
 
   /* Dark mode colors */
+  --color-absolute-dark: black;
   --color-primary-dark: white;
   --color-secondary-dark: #f1f5f9;
   --color-tertiary-dark: #94a3b8;
@@ -23,6 +25,7 @@
 }
 
 .dark {
+  --color-absolute: var(--color-absolute-dark);
   --color-primary: var(--color-primary-dark);
   --color-secondary: var(--color-secondary-dark);
   --color-tertiary: var(--color-tertiary-dark);

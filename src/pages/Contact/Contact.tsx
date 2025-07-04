@@ -1,6 +1,5 @@
-import { ContactLink, Paragraph, Section } from '@/components';
+import { ContactEmail, ContactLink, Paragraph, Section } from '@/components';
 import { useTranslation } from 'react-i18next';
-import ContactEmail from './ContactEmail/ContactEmail';
 
 const Contact = () => {
   const { t } = useTranslation();
