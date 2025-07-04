@@ -1,5 +1,4 @@
 import { Collapse, Paragraph, ProfilePicture, Title } from '@/components';
-import { cn } from '@/utils/cn';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import ExpandIcon from '../../icons/ExpandIcon';
@@ -15,13 +14,7 @@ const Intro = () => {
   return (
     <div className="flex flex-col gap-8">
       <div className="relative flex max-w-lg flex-col gap-2">
-        <ProfilePicture
-          className={cn(
-            'absolute -top-8 right-0',
-            'max-[580px]:-top-16',
-            'max-[494px]:static max-[494px]:top-auto max-[494px]:right-auto max-[494px]:translate-y-[-10] max-[494px]:self-center',
-          )}
-        />
+        <ProfilePicture className="absolute -top-8 right-0 max-[580px]:-top-16 max-[494px]:static max-[494px]:top-auto max-[494px]:right-auto max-[494px]:translate-y-[-10] max-[494px]:self-center" />
         <div className="flex items-center gap-x-4">
           <Title level={1}>{t('hi')},</Title>
           <img className="h-16 w-16" src="images/waving-hand-emoji.png" />
