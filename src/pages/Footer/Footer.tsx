@@ -1,25 +1,21 @@
-import { useTranslation } from 'react-i18next';
 import { Link } from '@/components';
+import { useTranslation } from 'react-i18next';
 import GitHubIcon from '../../icons/GitHubIcon';
-import styles from './Footer.module.scss';
 
 const Footer = () => {
   const { t } = useTranslation();
 
   return (
-    <footer className={styles.footer}>
-      <span className={styles.credits}>
-        {t('credits')}{' '}
-        <Link href="https://github.com/amadeuio">
-          @amadeuio
-        </Link>
+    <footer className="text-tertiary flex items-center justify-center gap-15 py-7 text-sm md:flex-col md:gap-5">
+      <span className="text-center leading-relaxed">
+        {t('credits')} <Link href="https://github.com/amadeuio">@amadeuio</Link>
       </span>
 
       <Link
         href="https://github.com/amadeuio/portfolio"
-        className={styles.portfolioRepo}
+        className="text-accent flex items-center justify-center gap-1.25"
       >
-        <GitHubIcon className={styles.gitHubIcon} />
+        <GitHubIcon className="stroke-accent h-5 w-5" />
         Portfolio Repo
       </Link>
     </footer>
