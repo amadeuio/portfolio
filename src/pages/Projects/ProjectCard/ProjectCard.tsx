@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next';
+import { Link } from '@/components';
 import { Project } from '../../../data/projects';
 import EyeIcon from '../../../icons/EyeIcon';
 import GitHubIcon from '../../../icons/GitHubIcon';
@@ -33,20 +34,20 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
 
   return (
     <div className={styles.projectCard}>
-      <a className={styles.link} href={demo} target="_blank" rel="noopener noreferrer">
+      <Link className={styles.link} href={demo}>
         <img src={`images/${img}`} alt={name} className={styles.image} />
-      </a>
+      </Link>
       <div className={styles.projectInfo}>
         <h3>{name}</h3>
         <p className={styles.description}>{t(descriptionKey)}</p>
       </div>
       <div className={styles.buttons}>
-        <a className={styles.link} href={demo} target="_blank" rel="noopener noreferrer">
+        <Link className={styles.link} href={demo}>
           <ProjectButton label={'Demo'} />
-        </a>
-        <a className={styles.link} href={repo} target="_blank" rel="noopener noreferrer">
+        </Link>
+        <Link className={styles.link} href={repo}>
           <ProjectButton label={'Repo'} />
-        </a>
+        </Link>
       </div>
     </div>
   );

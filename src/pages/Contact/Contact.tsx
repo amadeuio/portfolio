@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next';
+import { Link } from '@/components';
 import GitHubIcon from '../../icons/GitHubIcon';
 import LinkedInIcon from '../../icons/LinkedInIcon';
 import styles from './Contact.module.scss';
@@ -13,16 +14,16 @@ const Contact = () => {
       <p>{t('contactDescription')}</p>
       <div className={styles.links}>
         <ContactEmail />
-        <a href="https://www.linkedin.com/in/amadeuio" target="_blank" rel="noopener noreferrer">
+        <Link href="https://www.linkedin.com/in/amadeuio">
           <div className={styles.iconContainer}>
             <LinkedInIcon className={styles.linkedInIcon} />
           </div>
-        </a>
-        <a href="https://github.com/amadeuio" target="_blank" rel="noopener noreferrer">
+        </Link>
+        <Link href="https://github.com/amadeuio">
           <div className={styles.iconContainer}>
             <GitHubIcon className={styles.gitHubIcon} />
           </div>
-        </a>
+        </Link>
       </div>
     </div>
   );

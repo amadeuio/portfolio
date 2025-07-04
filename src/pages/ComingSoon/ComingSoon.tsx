@@ -1,3 +1,4 @@
+import { Link } from '@/components';
 import styles from './ComingSoon.module.scss';
 
 const ComingSoon = () => {
@@ -11,31 +12,19 @@ const ComingSoon = () => {
         <p> Meanwhile, check out some of my projects ⬇️</p>
         <ul className={styles.list}>
           <li>
-            <a
-              href="https://github.com/amadeuio/fruits-store"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <Link href="https://github.com/amadeuio/fruits-store">
               Fruits Store
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="https://github.com/amadeuio/make-your-cv"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <Link href="https://github.com/amadeuio/make-your-cv">
               Make Your CV
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="https://github.com/amadeuio/battleship"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <Link href="https://github.com/amadeuio/battleship">
               Battleship
-            </a>
+            </Link>
           </li>
         </ul>
       </div>

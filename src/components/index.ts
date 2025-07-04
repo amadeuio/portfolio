@@ -1,5 +1,6 @@
 export { default as Collapse } from './Collapse';
 export { default as DarkSwitch } from './DarkSwitch';
+export { default as Link } from './Link';
 export { default as Paragraph } from './Paragraph';
 export { default as ProfilePicture } from './ProfilePicture';
 export { default as Section } from './Section';

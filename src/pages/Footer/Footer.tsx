@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next';
+import { Link } from '@/components';
 import GitHubIcon from '../../icons/GitHubIcon';
 import styles from './Footer.module.scss';
 
@@ -9,20 +10,18 @@ const Footer = () => {
     <footer className={styles.footer}>
       <span className={styles.credits}>
         {t('credits')}{' '}
-        <a href="https://github.com/amadeuio" target="_blank" rel="noopener noreferrer">
+        <Link href="https://github.com/amadeuio">
           @amadeuio
-        </a>
+        </Link>
       </span>
 
-      <a
+      <Link
         href="https://github.com/amadeuio/portfolio"
         className={styles.portfolioRepo}
-        target="_blank"
-        rel="noopener noreferrer"
       >
         <GitHubIcon className={styles.gitHubIcon} />
         Portfolio Repo
-      </a>
+      </Link>
     </footer>
   );
 };
