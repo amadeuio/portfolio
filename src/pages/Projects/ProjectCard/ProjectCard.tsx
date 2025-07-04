@@ -1,33 +1,29 @@
-import { Link } from '@/components';
+import { Link, Paragraph, Title } from '@/components';
+import { Project } from '@/data/projects';
+import EyeIcon from '@/icons/EyeIcon';
+import GitHubIcon from '@/icons/GitHubIcon';
 import { useTranslation } from 'react-i18next';
-import { Project } from '../../../data/projects';
-import EyeIcon from '../../../icons/EyeIcon';
-import GitHubIcon from '../../../icons/GitHubIcon';
 
 interface ButtonProps {
   label: 'Demo' | 'Repo';
 }
 
-const ProjectButton: React.FC<ButtonProps> = ({ label }) => {
-  const demo = label === 'Demo';
-
-  return (
-    <button className="text-primary border-border hover:bg-border flex cursor-pointer items-center justify-center gap-2 rounded-md border px-4.5 py-3 text-sm transition-colors duration-100">
-      {demo ? (
-        <EyeIcon className="fill-primary h-5 w-5" />
-      ) : label === 'Repo' ? (
-        <GitHubIcon className="stroke-primary h-5 w-5" />
-      ) : null}
-      {label}
-    </button>
-  );
-};
+const ProjectButton = ({ label }: ButtonProps) => (
+  <button className="text-primary border-border hover:bg-border flex cursor-pointer items-center justify-center gap-2 rounded-md border px-4.5 py-3 text-sm transition-colors duration-100">
+    {label === 'Demo' ? (
+      <EyeIcon className="fill-primary h-5 w-5" />
+    ) : (
+      <GitHubIcon className="stroke-primary h-5 w-5" />
+    )}
+    {label}
+  </button>
+);
 
 interface ProjectCardProps {
   project: Project;
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
+const ProjectCard = ({ project }: ProjectCardProps) => {
   const { name, img, demo, repo, descriptionKey } = project;
   const { t } = useTranslation();
 
@@ -41,15 +37,15 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
         />
       </Link>
       <div className="flex flex-col gap-1">
-        <h3>{name}</h3>
-        <p className="text-tertiary">{t(descriptionKey)}</p>
+        <Title level={3}>{name}</Title>
+        <Paragraph className="text-tertiary">{t(descriptionKey)}</Paragraph>
       </div>
       <div className="flex gap-x-2">
         <Link href={demo}>
-          <ProjectButton label={'Demo'} />
+          <ProjectButton label="Demo" />
         </Link>
         <Link href={repo}>
-          <ProjectButton label={'Repo'} />
+          <ProjectButton label="Repo" />
         </Link>
       </div>
     </div>
