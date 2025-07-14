@@ -6,7 +6,7 @@ const Footer = () => {
   const { t } = useTranslation();
 
   return (
-    <footer className="text-tertiary flex items-center justify-center gap-15 py-7 text-sm md:flex-col md:gap-5">
+    <footer className="text-tertiary flex flex-col items-center justify-center gap-5 py-7 text-sm md:flex-row md:gap-15">
       <span className="text-center leading-relaxed">
         {t('credits')} <Link href="https://github.com/amadeuio">@amadeuio</Link>
       </span>

@@ -5,7 +5,7 @@ const Contact = () => {
   const { t } = useTranslation();
 
   return (
-    <Section title={t('contact')}>
+    <Section title={t('contact')} childrenClassName="flex flex-col gap-y-6">
       <Paragraph>{t('contactDescription')}</Paragraph>
       <div className="flex flex-wrap items-center justify-center gap-5 md:justify-start md:gap-10">
         <ContactEmail />

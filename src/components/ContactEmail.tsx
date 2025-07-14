@@ -36,7 +36,7 @@ const ContactEmail = () => {
       arrow
     >
       <span
-        className="border-border bg-absolute cursor-pointer rounded-sm border p-2 font-mono text-sm"
+        className="border-border bg-absolute cursor-pointer rounded-sm border px-2 py-1 font-mono text-sm"
         onClick={copyToClipboard}
       >
         {email}
