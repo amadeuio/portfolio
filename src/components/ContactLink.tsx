@@ -1,6 +1,6 @@
 import { Link } from '@/components';
-import GitHubIcon from '../icons/GitHubIcon';
-import LinkedInIcon from '../icons/LinkedInIcon';
+import GitHubIcon from '@/icons/GitHubIcon';
+import LinkedInIcon from '@/icons/LinkedInIcon';
 
 type ContactKey = 'linkedin' | 'github';
 

@@ -1,5 +1,5 @@
-import { cn } from '../utils/cn';
-import Title from './Title';
+import { Title } from '@/components';
+import { cn } from '@/utils/cn';
 
 interface SectionProps {
   title: React.ReactNode;

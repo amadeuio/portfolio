@@ -1,6 +1,6 @@
+import { useNightModeContext } from '@/context/NightModeContext';
 import { Contact, Footer, Intro, Navbar, Projects, Skills } from '@/sections';
 import { cn } from '@/utils/cn';
-import { useNightModeContext } from './context/NightModeContext';
 
 const App = () => {
   const { isNightMode } = useNightModeContext();

@@ -1,7 +1,7 @@
+import App from '@/App.tsx';
+import { NightModeContextProvider } from '@/context/NightModeContext';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App.tsx';
-import { NightModeContextProvider } from './context/NightModeContext';
 import './i18n';
 import './index.css';
 

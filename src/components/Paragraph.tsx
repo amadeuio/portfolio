@@ -1,4 +1,4 @@
-import { cn } from '../utils/cn';
+import { cn } from '@/utils/cn';
 
 interface ParagraphProps {
   level?: 1 | 2;
