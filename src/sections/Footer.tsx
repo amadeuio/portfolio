@@ -1,6 +1,6 @@
 import { Link, Paragraph } from '@/components';
 import { useTranslation } from 'react-i18next';
-import GitHubIcon from '../../icons/GitHubIcon';
+import GitHubIcon from '@/icons/GitHubIcon';
 
 const Footer = () => {
   const { t } = useTranslation();

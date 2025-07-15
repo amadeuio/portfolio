@@ -17,7 +17,7 @@ import {
   TypeScriptIcon,
   ViteIcon,
   WebpackIcon,
-} from './SkillsIcons';
+} from '@/icons/SkillsIcons';
 
 export const skillsData = [
   {
