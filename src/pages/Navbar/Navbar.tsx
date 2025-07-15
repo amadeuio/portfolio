@@ -1,5 +1,5 @@
-import { useTranslation } from 'react-i18next';
 import { DarkSwitch } from '@/components';
+import { useTranslation } from 'react-i18next';
 
 const Navbar = () => {
   const { i18n } = useTranslation();
@@ -9,7 +9,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="mb-5 flex justify-between py-8">
+    <nav className="mb-5 flex justify-between py-4 sm:py-8">
       <div className="flex items-center">
         <div className="text-xl font-semibold">amadeuio</div>
       </div>

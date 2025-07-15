@@ -38,7 +38,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
       </Link>
       <div className="flex flex-col gap-1">
         <Title level={3}>{name}</Title>
-        <Paragraph className="text-tertiary">{t(descriptionKey)}</Paragraph>
+        <Paragraph level={2}>{t(descriptionKey)}</Paragraph>
       </div>
       <div className="flex gap-x-2">
         <Link href={demo}>

@@ -6,7 +6,7 @@ interface ProfilePictureProps {
 
 const ProfilePicture = ({ className }: ProfilePictureProps) => (
   <img
-    className={cn('h-34 w-34 rounded-full border-3 border-[var(--color-700)]', className)}
+    className={cn('border-secondary aspect-square w-32 rounded-full border-3 sm:w-34', className)}
     src="images/profile-pic.jpg"
     alt="Profile picture"
   />
