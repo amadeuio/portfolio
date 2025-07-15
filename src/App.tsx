@@ -1,18 +1,18 @@
-import styles from './App.module.scss';
-import Contact from './components/Contact/Contact';
-import Footer from './components/Footer/Footer';
-import Intro from './components/Intro/Intro';
-import Navbar from './components/Navbar/Navbar';
-import Projects from './components/Projects/Projects';
-import Skills from './components/Skills/Skills';
-import { useNightModeContext } from './context/NightModeContext';
+import { useNightModeContext } from '@/context/NightModeContext';
+import { Contact, Footer, Intro, Navbar, Projects, Skills } from '@/sections';
+import { cn } from '@/utils/cn';
 
 const App = () => {
   const { isNightMode } = useNightModeContext();
 
   return (
-    <div className={`${styles.app} ${isNightMode ? styles.nightMode : ''}`}>
-      <div className={styles.content}>
+    <div
+      className={cn(
+        'text-primary bg-background box-border flex flex-col items-center px-5 transition-[background-color] duration-200 sm:px-10',
+        isNightMode ? 'dark' : '',
+      )}
+    >
+      <div className="flex max-w-5xl flex-col gap-24">
         <Navbar />
         <Intro />
         <Projects />
