@@ -1,6 +1,6 @@
 import { ProjectCard, Section } from '@/components';
-import { useTranslation } from 'react-i18next';
 import projects from '@/data/projects';
+import { useTranslation } from 'react-i18next';
 
 const Projects = () => {
   const { t } = useTranslation();

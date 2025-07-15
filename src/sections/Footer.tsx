@@ -1,13 +1,13 @@
 import { Link, Paragraph } from '@/components';
-import { useTranslation } from 'react-i18next';
 import GitHubIcon from '@/icons/GitHubIcon';
+import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
   const { t } = useTranslation();
 
   return (
     <footer className="flex flex-col items-center justify-center gap-6 py-6 md:flex-row md:gap-16">
-      <Paragraph level={2} className="text-sm text-center">
+      <Paragraph level={2} className="text-center text-sm">
         {t('credits')} <Link href="https://github.com/amadeuio">@amadeuio</Link>
       </Paragraph>
       <Link

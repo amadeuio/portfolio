@@ -36,4 +36,4 @@ const DarkSwitch = () => {
   );
 };
 
-export default DarkSwitch; 
+export default DarkSwitch;

@@ -6,10 +6,10 @@ interface SkillBadgeProps {
 }
 
 const SkillBadge = ({ icon, name }: SkillBadgeProps) => (
-  <div className="cursor-default flex items-center gap-x-2 border border-border rounded-md p-4 whitespace-nowrap">
+  <div className="border-border flex cursor-default items-center gap-x-2 rounded-md border p-4 whitespace-nowrap">
     {icon}
     {name}
   </div>
 );
 
-export default SkillBadge; 
+export default SkillBadge;

@@ -1,6 +1,6 @@
 import { Section, SkillBadge } from '@/components';
-import { useTranslation } from 'react-i18next';
 import { skillsData } from '@/data/SkillsData';
+import { useTranslation } from 'react-i18next';
 
 const Skills = () => {
   const { t } = useTranslation();

@@ -1,5 +1,5 @@
 ![Stack](https://img.shields.io/badge/Stack-React_|_TypeScript-149eca)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/c7d84bf3-e09b-4290-9168-a38ade1abbc4/deploy-status)](https://app.netlify.com/projects/portfolio-amadeuio/deploys) 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c7d84bf3-e09b-4290-9168-a38ade1abbc4/deploy-status)](https://app.netlify.com/projects/portfolio-amadeuio/deploys)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
 # Portfolio
