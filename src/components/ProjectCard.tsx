@@ -1,8 +1,7 @@
 import { Link, Paragraph, Title } from '@/components';
 import { Project } from '@/data/projects';
-import EyeIcon from '@/icons/EyeIcon';
-import GitHubIcon from '@/icons/GitHubIcon';
 import { useTranslation } from 'react-i18next';
+import { LuEye, LuGithub } from 'react-icons/lu';
 
 interface ButtonProps {
   label: 'Demo' | 'Repo';
@@ -10,11 +9,7 @@ interface ButtonProps {
 
 const ProjectButton = ({ label }: ButtonProps) => (
   <button className="text-primary border-border hover:bg-border flex cursor-pointer items-center justify-center gap-2 rounded-md border px-4.5 py-3 text-sm transition-colors duration-100">
-    {label === 'Demo' ? (
-      <EyeIcon className="fill-primary h-5 w-5" />
-    ) : (
-      <GitHubIcon className="stroke-primary h-5 w-5" />
-    )}
+    {label === 'Demo' ? <LuEye size={18} /> : <LuGithub size={18} />}
     {label}
   </button>
 );
