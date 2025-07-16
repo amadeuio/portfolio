@@ -9,3 +9,4 @@ export { default as ProjectCard } from './ProjectCard';
 export { default as Section } from './Section';
 export { default as SkillBadge } from './SkillBadge';
 export { default as Title } from './Title';
+export { default as Tooltip } from './Tooltip';
