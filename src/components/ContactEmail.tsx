@@ -1,4 +1,4 @@
-import Tooltip from '@mui/material/Tooltip';
+import { Tooltip } from '@/components';
 import { useState } from 'react';
 
 const ContactEmail = () => {
@@ -20,21 +20,7 @@ const ContactEmail = () => {
   };
 
   return (
-    <Tooltip
-      componentsProps={{
-        tooltip: {
-          sx: {
-            padding: 1.3,
-            fontFamily: 'Helvetica, Arial, sans-serif',
-            fontSize: 11,
-          },
-        },
-      }}
-      placement="top"
-      onOpen={handleTooltipOpen}
-      title={tooltipTitle}
-      arrow
-    >
+    <Tooltip content={tooltipTitle} onTooltipOpen={handleTooltipOpen}>
       <span
         className="border-border bg-absolute cursor-pointer rounded-sm border px-2 py-1 font-mono text-sm"
         onClick={copyToClipboard}
