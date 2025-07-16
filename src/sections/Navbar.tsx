@@ -1,8 +1,10 @@
 import { DarkSwitch } from '@/components';
+import { useNightModeContext } from '@/context/NightModeContext';
 import { useTranslation } from 'react-i18next';
 
 const Navbar = () => {
   const { i18n } = useTranslation();
+  const { isNightMode, toggleNightMode } = useNightModeContext();
 
   const handleLanguageClick = () => {
     i18n.changeLanguage(i18n.language === 'en' ? 'es' : 'en');
@@ -17,7 +19,7 @@ const Navbar = () => {
         <div className="text-tertiary w-[23px] cursor-pointer" onClick={handleLanguageClick}>
           {i18n.language === 'en' ? 'ES' : 'EN'}
         </div>
-        <DarkSwitch />
+        <DarkSwitch isDarkMode={isNightMode} onToggle={toggleNightMode} />
       </div>
     </nav>
   );
