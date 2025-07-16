@@ -1,39 +1,37 @@
+import { LinuxIcon, ViteIcon } from '@/custom-icons';
+import { BiLogoTypescript } from 'react-icons/bi';
+import { LuDatabase, LuTerminal } from 'react-icons/lu';
 import {
-  BashIcon,
-  CSSIcon,
-  CSSInJsIcon,
-  DataStructuresIcon,
-  GitIcon,
-  HtmlIcon,
-  JestIcon,
-  LinuxIcon,
-  NextIcon,
-  NodeJSIcon,
-  ReactIcon,
-  ReactRouterIcon,
-  ReduxIcon,
-  RestApiIcon,
-  TailwindIcon,
-  TypeScriptIcon,
-  ViteIcon,
-  WebpackIcon,
-} from '@/icons/SkillsIcons';
+  SiCss3,
+  SiGit,
+  SiHtml5,
+  SiJest,
+  SiNextdotjs,
+  SiNodedotjs,
+  SiReact,
+  SiReactrouter,
+  SiRedux,
+  SiStrapi,
+  SiStyledcomponents,
+  SiTailwindcss,
+  SiWebpack,
+} from 'react-icons/si';
 
 export const skillsData = [
   {
-    icon: <ReactIcon />,
+    icon: <SiReact />,
     name: 'React',
   },
   {
-    icon: <TypeScriptIcon />,
-    name: 'TypeScript / JavaScript',
+    icon: <BiLogoTypescript size={20} />,
+    name: 'TypeScript',
   },
   {
-    icon: <CSSIcon />,
+    icon: <SiCss3 />,
     name: 'CSS / SASS',
   },
   {
-    icon: <NodeJSIcon />,
+    icon: <SiNodedotjs />,
     name: 'NodeJS',
   },
   {
@@ -41,35 +39,35 @@ export const skillsData = [
     name: 'Vite',
   },
   {
-    icon: <TailwindIcon />,
+    icon: <SiTailwindcss />,
     name: 'Tailwind',
   },
   {
-    icon: <ReduxIcon />,
+    icon: <SiRedux />,
     name: 'Redux',
   },
   {
-    icon: <NextIcon />,
+    icon: <SiNextdotjs />,
     name: 'Next',
   },
   {
-    icon: <JestIcon />,
+    icon: <SiJest />,
     name: 'Jest',
   },
   {
-    icon: <WebpackIcon />,
+    icon: <SiWebpack />,
     name: 'Webpack',
   },
   {
-    icon: <ReactRouterIcon />,
+    icon: <SiReactrouter />,
     name: 'React Router',
   },
   {
-    icon: <GitIcon />,
+    icon: <SiGit />,
     name: 'Git',
   },
   {
-    icon: <BashIcon />,
+    icon: <LuTerminal />,
     name: 'Bash',
   },
   {
@@ -77,19 +75,19 @@ export const skillsData = [
     name: 'Linux',
   },
   {
-    icon: <CSSInJsIcon />,
+    icon: <SiStyledcomponents />,
     name: 'CSS-in-JS',
   },
   {
-    icon: <RestApiIcon />,
+    icon: <SiStrapi />,
     name: 'REST APIs',
   },
   {
-    icon: <HtmlIcon />,
+    icon: <SiHtml5 />,
     name: 'HTML',
   },
   {
-    icon: <DataStructuresIcon />,
+    icon: <LuDatabase />,
     name: 'Data Structures',
   },
 ];

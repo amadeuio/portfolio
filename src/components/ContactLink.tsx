@@ -1,6 +1,6 @@
 import { Link } from '@/components';
-import GitHubIcon from '@/icons/GitHubIcon';
-import LinkedInIcon from '@/icons/LinkedInIcon';
+import { FaLinkedinIn } from 'react-icons/fa';
+import { LuGithub } from 'react-icons/lu';
 
 type ContactKey = 'linkedin' | 'github';
 
@@ -12,11 +12,11 @@ const ContactLink = ({ contactKey }: ContactLinkProps) => {
   const contactConfig: Record<ContactKey, { href: string; icon: React.ReactNode }> = {
     linkedin: {
       href: 'https://www.linkedin.com/in/amadeuio',
-      icon: <LinkedInIcon className="fill-primary h-6 w-6" />,
+      icon: <FaLinkedinIn size={22} className="text-primary" />,
     },
     github: {
       href: 'https://github.com/amadeuio',
-      icon: <GitHubIcon className="stroke-primary h-6 w-6" />,
+      icon: <LuGithub size={22} className="text-primary" />,
     },
   };
 

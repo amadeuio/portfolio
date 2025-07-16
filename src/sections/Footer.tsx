@@ -1,6 +1,6 @@
 import { Link, Paragraph } from '@/components';
-import GitHubIcon from '@/icons/GitHubIcon';
 import { useTranslation } from 'react-i18next';
+import { LuGithub } from 'react-icons/lu';
 
 const Footer = () => {
   const { t } = useTranslation();
@@ -14,7 +14,7 @@ const Footer = () => {
         href="https://github.com/amadeuio/portfolio"
         className="text-accent flex items-center gap-2 text-sm"
       >
-        <GitHubIcon className="stroke-accent h-5 w-5" />
+        <LuGithub size={18} className="text-accent" />
         Portfolio Repo
       </Link>
     </footer>

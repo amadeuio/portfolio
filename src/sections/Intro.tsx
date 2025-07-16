@@ -1,7 +1,7 @@
 import { Collapse, Paragraph, ProfilePicture, Title } from '@/components';
-import ExpandIcon from '@/icons/ExpandIcon';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { LuChevronDown, LuChevronUp } from 'react-icons/lu';
 
 const Intro = () => {
   const { t } = useTranslation();
@@ -37,7 +37,7 @@ const Intro = () => {
           className="text-tertiary mt-5 flex cursor-pointer items-center gap-2 self-center"
           onClick={handleExpandBioClick}
         >
-          <ExpandIcon className="fill-tertiary h-5 w-5" isExpanded={isExpanded} />
+          {isExpanded ? <LuChevronUp size={18} /> : <LuChevronDown size={18} />}
           {isExpanded ? t('collapseLabel') : t('expandLabel')}
         </button>
       </div>
