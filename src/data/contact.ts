@@ -8,18 +8,10 @@ export const CONTACT: Contact = {
     {
       href: 'https://www.linkedin.com/in/amadeuio',
       icon: FaLinkedinIn,
-      iconProps: {
-        size: 22,
-        className: 'text-primary',
-      },
     },
     {
       href: 'https://github.com/amadeuio',
       icon: LuGithub,
-      iconProps: {
-        size: 22,
-        className: 'text-primary',
-      },
     },
   ],
 };
