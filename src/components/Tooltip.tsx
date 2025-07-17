@@ -25,7 +25,7 @@ const Tooltip = ({ content, children, onTooltipOpen }: TooltipProps) => {
       </span>
       <div
         className={cn(
-          'absolute -top-8 left-1/2 z-10 -translate-x-1/2 rounded bg-gray-500 px-2 py-1 text-xs text-gray-100 shadow-md transition-all duration-100 ease-in-out',
+          'absolute -top-8 left-1/2 z-10 -translate-x-1/2 rounded bg-slate-500 px-2 py-1 text-xs text-gray-100 shadow-md transition-all duration-100 ease-in-out',
           visible
             ? 'pointer-events-auto scale-100 opacity-100'
             : 'pointer-events-none scale-80 opacity-0',
@@ -33,7 +33,7 @@ const Tooltip = ({ content, children, onTooltipOpen }: TooltipProps) => {
       >
         {content}
         <div
-          className="absolute top-full left-1/2 h-0 w-0 -translate-x-1/2 border-x-5 border-t-4 border-x-transparent border-t-gray-500"
+          className="absolute top-full left-1/2 h-0 w-0 -translate-x-1/2 border-x-5 border-t-4 border-x-transparent border-t-slate-500"
           aria-hidden="true"
         />
       </div>
