@@ -1,4 +1,5 @@
 import { LinuxIcon, ViteIcon } from '@/custom-icons';
+import { Skill } from '@/types';
 import { BiLogoTypescript } from 'react-icons/bi';
 import { LuDatabase, LuTerminal } from 'react-icons/lu';
 import {
@@ -17,77 +18,80 @@ import {
   SiWebpack,
 } from 'react-icons/si';
 
-export const skillsData = [
+export const skillsData: Skill[] = [
   {
-    icon: <SiReact />,
+    icon: SiReact,
     name: 'React',
   },
   {
-    icon: <BiLogoTypescript size={20} />,
+    icon: BiLogoTypescript,
     name: 'TypeScript',
+    iconProps: {
+      size: 20,
+    },
   },
   {
-    icon: <SiCss3 />,
+    icon: SiCss3,
     name: 'CSS / SASS',
   },
   {
-    icon: <SiNodedotjs />,
+    icon: SiNodedotjs,
     name: 'NodeJS',
   },
   {
-    icon: <ViteIcon />,
+    icon: ViteIcon,
     name: 'Vite',
   },
   {
-    icon: <SiTailwindcss />,
+    icon: SiTailwindcss,
     name: 'Tailwind',
   },
   {
-    icon: <SiRedux />,
+    icon: SiRedux,
     name: 'Redux',
   },
   {
-    icon: <SiNextdotjs />,
+    icon: SiNextdotjs,
     name: 'Next',
   },
   {
-    icon: <SiJest />,
+    icon: SiJest,
     name: 'Jest',
   },
   {
-    icon: <SiWebpack />,
+    icon: SiWebpack,
     name: 'Webpack',
   },
   {
-    icon: <SiReactrouter />,
+    icon: SiReactrouter,
     name: 'React Router',
   },
   {
-    icon: <SiGit />,
+    icon: SiGit,
     name: 'Git',
   },
   {
-    icon: <LuTerminal />,
+    icon: LuTerminal,
     name: 'Bash',
   },
   {
-    icon: <LinuxIcon />,
+    icon: LinuxIcon,
     name: 'Linux',
   },
   {
-    icon: <SiStyledcomponents />,
+    icon: SiStyledcomponents,
     name: 'CSS-in-JS',
   },
   {
-    icon: <SiStrapi />,
+    icon: SiStrapi,
     name: 'REST APIs',
   },
   {
-    icon: <SiHtml5 />,
+    icon: SiHtml5,
     name: 'HTML',
   },
   {
-    icon: <LuDatabase />,
+    icon: LuDatabase,
     name: 'Data Structures',
   },
 ];
