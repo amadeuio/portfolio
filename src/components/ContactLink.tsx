@@ -1,5 +1,5 @@
 import { Link } from '@/components';
-import { ContactLink as ContactLinkType } from '@/types';
+import type { ContactLink as ContactLinkType } from '@/types';
 
 const ContactLink = ({ href, icon: Icon, iconProps }: ContactLinkType) => (
   <Link

@@ -1,5 +1,5 @@
 import { Link, Paragraph, Title } from '@/components';
-import { Project } from '@/types';
+import type { Project } from '@/types';
 import { useTranslation } from 'react-i18next';
 import { LuEye, LuGithub } from 'react-icons/lu';
 

@@ -1,4 +1,4 @@
-import { Contact } from '@/types';
+import type { Contact } from '@/types';
 import { FaLinkedinIn } from 'react-icons/fa';
 import { LuGithub } from 'react-icons/lu';
 

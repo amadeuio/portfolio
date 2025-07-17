@@ -1,5 +1,5 @@
 import { LinuxIcon, ViteIcon } from '@/custom-icons';
-import { Skill } from '@/types';
+import type { Skill } from '@/types';
 import { BiLogoTypescript } from 'react-icons/bi';
 import { LuDatabase, LuTerminal } from 'react-icons/lu';
 import {

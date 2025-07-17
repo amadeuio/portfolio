@@ -1,5 +1,5 @@
-import { ComponentType } from 'react';
-import { IconType } from 'react-icons';
+import type { ComponentType } from 'react';
+import type { IconType } from 'react-icons';
 
 export interface Skill {
   name: string;
