@@ -18,7 +18,7 @@ import {
   SiWebpack,
 } from 'react-icons/si';
 
-export const skillsData: Skill[] = [
+export const SKILLS: Skill[] = [
   {
     icon: SiReact,
     name: 'React',
