@@ -1,5 +1,5 @@
 import { Link, Paragraph, Title } from '@/components';
-import { Project } from '@/data/projects';
+import type { Project } from '@/types';
 import { useTranslation } from 'react-i18next';
 import { LuEye, LuGithub } from 'react-icons/lu';
 
@@ -14,12 +14,7 @@ const ProjectButton = ({ label }: ButtonProps) => (
   </button>
 );
 
-interface ProjectCardProps {
-  project: Project;
-}
-
-const ProjectCard = ({ project }: ProjectCardProps) => {
-  const { name, img, demo, repo, descriptionKey } = project;
+const ProjectCard = ({ name, img, demo, repo, descriptionKey }: Project) => {
   const { t } = useTranslation();
 
   return (

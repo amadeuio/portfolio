@@ -1,9 +1,8 @@
 import { Tooltip } from '@/components';
 import { useState } from 'react';
 
-const ContactEmail = () => {
+const ContactEmail = ({ email }: { email: string }) => {
   const [tooltipTitle, setTooltipTitle] = useState('');
-  const email = 'amadeuserras@gmail.com';
 
   const copyToClipboard = async () => {
     try {

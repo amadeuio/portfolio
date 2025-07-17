@@ -1,13 +1,8 @@
-import { ReactNode } from 'react';
+import type { Skill } from '@/types';
 
-interface SkillBadgeProps {
-  icon: ReactNode;
-  name: string;
-}
-
-const SkillBadge = ({ icon, name }: SkillBadgeProps) => (
+const SkillBadge = ({ icon: Icon, name, iconProps }: Skill) => (
   <div className="border-border flex cursor-default items-center gap-x-2 rounded-md border p-4 whitespace-nowrap">
-    {icon}
+    <Icon {...iconProps} />
     {name}
   </div>
 );

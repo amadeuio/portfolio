@@ -1,5 +1,5 @@
 import { Section, SkillBadge } from '@/components';
-import { skillsData } from '@/data/SkillsData';
+import { SKILLS } from '@/data';
 import { useTranslation } from 'react-i18next';
 
 const Skills = () => {
@@ -8,8 +8,8 @@ const Skills = () => {
   return (
     <Section title={t('skillsTitle')}>
       <div className="flex flex-wrap gap-2">
-        {skillsData.map((skill, index) => (
-          <SkillBadge key={index} icon={skill.icon} name={skill.name} />
+        {SKILLS.map((skill) => (
+          <SkillBadge key={skill.name} {...skill} />
         ))}
       </div>
     </Section>

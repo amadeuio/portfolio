@@ -1,5 +1,5 @@
 import { ProjectCard, Section } from '@/components';
-import projects from '@/data/projects';
+import { PROJECTS } from '@/data';
 import { useTranslation } from 'react-i18next';
 
 const Projects = () => {
@@ -8,8 +8,8 @@ const Projects = () => {
   return (
     <Section title={t('projectsTitle')}>
       <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-        {projects.map((project, index) => (
-          <ProjectCard key={index} project={project} />
+        {PROJECTS.map((project) => (
+          <ProjectCard key={project.name} {...project} />
         ))}
       </div>
     </Section>
