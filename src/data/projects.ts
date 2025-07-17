@@ -1,12 +1,6 @@
-export interface Project {
-  name: string;
-  img: string;
-  demo: string;
-  repo: string;
-  descriptionKey: string;
-}
+import { Project } from '@/types';
 
-const projects: Project[] = [
+export const PROJECTS: Project[] = [
   {
     name: 'Fruits Store',
     img: 'fruits-store.png',
@@ -29,5 +23,3 @@ const projects: Project[] = [
     descriptionKey: 'projects.makeYourCv',
   },
 ];
-
-export default projects;
