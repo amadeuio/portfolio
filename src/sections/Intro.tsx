@@ -37,8 +37,17 @@ const Intro = () => {
           className="text-tertiary mt-5 flex cursor-pointer items-center gap-2 self-center"
           onClick={handleExpandBioClick}
         >
-          {isExpanded ? <LuChevronUp size={18} /> : <LuChevronDown size={18} />}
-          {isExpanded ? t('collapseLabel') : t('expandLabel')}
+          {isExpanded ? (
+            <>
+              <LuChevronUp size={18} />
+              {t('collapseLabel')}
+            </>
+          ) : (
+            <>
+              <LuChevronDown size={18} />
+              {t('expandLabel')}
+            </>
+          )}
         </button>
       </div>
     </div>
