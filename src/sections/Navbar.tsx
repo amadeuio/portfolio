@@ -11,10 +11,8 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="mb-5 flex justify-between py-4 sm:py-8">
-      <div className="flex items-center">
-        <div className="text-xl font-semibold">amadeuio</div>
-      </div>
+    <nav className="mb-5 flex items-center justify-between py-4 sm:py-8">
+      <div className="text-xl font-semibold">amadeuio</div>
       <div className="flex items-center gap-x-6">
         <div className="text-tertiary w-[23px] cursor-pointer" onClick={handleLanguageClick}>
           {i18n.language === 'en' ? 'ES' : 'EN'}
