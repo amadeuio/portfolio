@@ -1,15 +1,15 @@
-import { useNightModeContext } from '@/context/NightModeContext';
+import { useDarkModeContext } from '@/context/DarkModeContext';
 import { Contact, Footer, Intro, Navbar, Projects, Skills } from '@/sections';
 import { cn } from '@/utils/cn';
 
 const App = () => {
-  const { isNightMode } = useNightModeContext();
+  const { isDarkMode } = useDarkModeContext();
 
   return (
     <div
       className={cn(
         'text-primary bg-background box-border flex flex-col items-center px-5 transition-[background-color] duration-200 sm:px-10',
-        isNightMode ? 'dark' : '',
+        isDarkMode ? 'dark' : '',
       )}
     >
       <div className="flex max-w-5xl flex-col gap-24">

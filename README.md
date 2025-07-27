@@ -22,7 +22,7 @@ Simple and aesthetic developer portfolio with Bio, Projects, Skills and Contact 
 ## Features
 
 - Expandable bio
-- Night Mode
+- Dark Mode
 - ENG and ES languages
 - Responsive
 
