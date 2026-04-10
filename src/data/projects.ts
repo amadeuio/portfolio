@@ -6,6 +6,7 @@ export const PROJECTS: Project[] = [
     img: 'zeronotes.png',
     demo: 'https://zeronotes.app',
     repo: 'https://github.com/amadeuio/zeronotes',
-    descriptionKey: 'projects.zeronotes',
+    description:
+      'Full-stack application with domain-driven backend, client-side encryption, and custom drag-and-drop engine. Built with React, TypeScript, NestJS, and PostgreSQL.',
   },
 ];

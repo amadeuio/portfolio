@@ -1,12 +1,9 @@
 import { ProjectCard, Section } from '@/components';
-import { PROJECTS } from '@/data';
-import { useTranslation } from 'react-i18next';
+import { PROJECTS, TEXT } from '@/data';
 
 const Projects = () => {
-  const { t } = useTranslation();
-
   return (
-    <Section title={t('projectsTitle')}>
+    <Section title={TEXT.projectsTitle}>
       <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
         {PROJECTS.map((project) => (
           <ProjectCard key={project.name} {...project} />

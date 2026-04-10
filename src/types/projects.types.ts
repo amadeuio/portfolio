@@ -3,5 +3,5 @@ export interface Project {
   img: string;
   demo: string;
   repo: string;
-  descriptionKey: string;
+  description: string;
 }

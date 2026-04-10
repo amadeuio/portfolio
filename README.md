@@ -13,7 +13,6 @@ Clean and modern full-stack developer portfolio featuring bio, projects, testimo
 ## Features
 
 - Dark/Light mode toggle
-- Bilingual support (English/Spanish)
 - Responsive design
 - Testimonials section
 - Project showcase

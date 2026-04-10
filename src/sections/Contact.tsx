@@ -1,13 +1,10 @@
 import { ContactEmail, ContactLink, Paragraph, Section } from '@/components';
-import { CONTACT } from '@/data';
-import { useTranslation } from 'react-i18next';
+import { CONTACT, TEXT } from '@/data';
 
 const Contact = () => {
-  const { t } = useTranslation();
-
   return (
-    <Section title={t('contact')} childrenClassName="flex flex-col gap-y-6">
-      <Paragraph>{t('contactDescription')}</Paragraph>
+    <Section title={TEXT.contact} childrenClassName="flex flex-col gap-y-6">
+      <Paragraph>{TEXT.contactDescription}</Paragraph>
       <div className="flex flex-wrap items-center justify-center gap-5 md:justify-start">
         <ContactEmail email={CONTACT.email} />
         {CONTACT.links.map((link) => (

@@ -1,6 +1,5 @@
 import { Link, Paragraph, Title } from '@/components';
 import type { Project } from '@/types';
-import { useTranslation } from 'react-i18next';
 import { LuEye, LuGithub } from 'react-icons/lu';
 
 interface ButtonProps {
@@ -14,9 +13,7 @@ const ProjectButton = ({ label }: ButtonProps) => (
   </button>
 );
 
-const ProjectCard = ({ name, img, demo, repo, descriptionKey }: Project) => {
-  const { t } = useTranslation();
-
+const ProjectCard = ({ name, img, demo, repo, description }: Project) => {
   return (
     <div className="flex flex-col justify-between gap-4">
       <Link href={demo}>
@@ -28,7 +25,7 @@ const ProjectCard = ({ name, img, demo, repo, descriptionKey }: Project) => {
       </Link>
       <div className="flex flex-col gap-1">
         <Title level={3}>{name}</Title>
-        <Paragraph level={2}>{t(descriptionKey)}</Paragraph>
+        <Paragraph level={2}>{description}</Paragraph>
       </div>
       <div className="flex gap-x-2">
         <Link href={demo}>
