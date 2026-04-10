@@ -13,16 +13,18 @@ const ProjectButton = ({ label }: ButtonProps) => (
   </button>
 );
 
-const ProjectCard = ({ name, img, demo, repo, description }: Project) => {
-  return (
-    <div className="flex flex-col justify-between gap-4">
+const ProjectCard = ({ name, img, demo, repo, description }: Project) => (
+  <div className="flex flex-col gap-6 md:flex-row md:gap-8">
+    <div className="shrink-0 md:w-5/12">
       <Link href={demo}>
         <img
           src={`images/${img}`}
           alt={name}
-          className="hover:border-tertiary max-w-full cursor-pointer rounded-lg border-2 border-200 transition-transform duration-200 hover:scale-104"
+          className="hover:border-tertiary w-full cursor-pointer rounded-lg border-2 border-200 transition-transform duration-200 hover:scale-104"
         />
       </Link>
+    </div>
+    <div className="flex flex-col gap-4 md:w-1/2">
       <div className="flex flex-col gap-1">
         <Title level={3}>{name}</Title>
         <Paragraph level={2}>{description}</Paragraph>
@@ -36,7 +38,7 @@ const ProjectCard = ({ name, img, demo, repo, description }: Project) => {
         </Link>
       </div>
     </div>
-  );
-};
+  </div>
+);
 
 export default ProjectCard;
