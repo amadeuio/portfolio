@@ -18,7 +18,7 @@ const Intro = () => {
         </span>
       </div>
       <div className="flex flex-col">
-        <Paragraph>{t('bio')}</Paragraph>
+        <Paragraph className="whitespace-pre-line">{t('bio')}</Paragraph>
       </div>
     </div>
   );
