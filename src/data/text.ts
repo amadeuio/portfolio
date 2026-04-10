@@ -8,8 +8,4 @@ export const TEXT = {
   skillsTitle: 'Skills',
   contact: 'Contact',
   credits: 'Developed 👨🏻‍💻 by',
-  projects: {
-    zeronotes:
-      'Full-stack application with domain-driven backend, client-side encryption, and custom drag-and-drop engine. Built with React, TypeScript, NestJS, and PostgreSQL.',
-  },
 } as const;
