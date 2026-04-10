@@ -1,24 +1,51 @@
 import { LinuxIcon, ViteIcon } from '@/custom-icons';
 import type { Skill } from '@/types';
 import { BiLogoTypescript } from 'react-icons/bi';
-import { LuDatabase, LuTerminal } from 'react-icons/lu';
+import { LuDatabase, LuShield } from 'react-icons/lu';
 import {
-  SiCss3,
   SiGit,
-  SiHtml5,
-  SiJest,
-  SiNextdotjs,
+  SiNestjs,
   SiNodedotjs,
+  SiPostgresql,
   SiReact,
-  SiReactrouter,
-  SiRedux,
   SiStrapi,
-  SiStyledcomponents,
   SiTailwindcss,
-  SiWebpack,
+  SiTurborepo,
+  SiVitest,
+  SiZod,
 } from 'react-icons/si';
 
 export const SKILLS: Skill[] = [
+  // Backend & Full-Stack
+  {
+    name: 'Node.js',
+    icon: SiNodedotjs,
+  },
+  {
+    name: 'NestJS',
+    icon: SiNestjs,
+  },
+  {
+    name: 'PostgreSQL',
+    icon: SiPostgresql,
+  },
+  {
+    name: 'REST APIs',
+    icon: SiStrapi,
+  },
+  {
+    name: 'JWT Auth',
+    icon: LuShield,
+  },
+  {
+    name: 'Domain-Driven Design',
+    icon: LuDatabase,
+  },
+  {
+    name: 'Turborepo',
+    icon: SiTurborepo,
+  },
+  // Frontend
   {
     name: 'React',
     icon: SiReact,
@@ -31,67 +58,32 @@ export const SKILLS: Skill[] = [
     },
   },
   {
-    name: 'CSS / SASS',
-    icon: SiCss3,
+    name: 'Tailwind CSS',
+    icon: SiTailwindcss,
   },
   {
-    name: 'NodeJS',
-    icon: SiNodedotjs,
+    name: 'Zustand',
+    icon: LuDatabase,
+  },
+  {
+    name: 'Zod',
+    icon: SiZod,
+  },
+  // Tools & Testing
+  {
+    name: 'Git',
+    icon: SiGit,
+  },
+  {
+    name: 'Vitest',
+    icon: SiVitest,
   },
   {
     name: 'Vite',
     icon: ViteIcon,
   },
   {
-    name: 'Tailwind',
-    icon: SiTailwindcss,
-  },
-  {
-    name: 'Redux',
-    icon: SiRedux,
-  },
-  {
-    name: 'Next',
-    icon: SiNextdotjs,
-  },
-  {
-    name: 'Jest',
-    icon: SiJest,
-  },
-  {
-    name: 'Webpack',
-    icon: SiWebpack,
-  },
-  {
-    name: 'React Router',
-    icon: SiReactrouter,
-  },
-  {
-    name: 'Git',
-    icon: SiGit,
-  },
-  {
-    name: 'Bash',
-    icon: LuTerminal,
-  },
-  {
     name: 'Linux',
     icon: LinuxIcon,
-  },
-  {
-    name: 'CSS-in-JS',
-    icon: SiStyledcomponents,
-  },
-  {
-    name: 'REST APIs',
-    icon: SiStrapi,
-  },
-  {
-    name: 'HTML',
-    icon: SiHtml5,
-  },
-  {
-    name: 'Data Structures',
-    icon: LuDatabase,
   },
 ];

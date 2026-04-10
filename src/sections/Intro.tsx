@@ -1,15 +1,8 @@
-import { Collapse, Paragraph, ProfilePicture, Title } from '@/components';
-import { useState } from 'react';
+import { Paragraph, ProfilePicture, Title } from '@/components';
 import { useTranslation } from 'react-i18next';
-import { LuChevronDown, LuChevronUp } from 'react-icons/lu';
 
 const Intro = () => {
   const { t } = useTranslation();
-  const [isExpanded, setIsExpanded] = useState(false);
-
-  const handleExpandBioClick = () => {
-    setIsExpanded(!isExpanded);
-  };
 
   return (
     <div className="flex flex-col gap-8">
@@ -24,31 +17,8 @@ const Intro = () => {
           {t('profession')}
         </span>
       </div>
-      <div className="flex max-w-3xl flex-col">
-        <Paragraph>{t('bio.short')}</Paragraph>
-        <Collapse isExpanded={isExpanded}>
-          <div className="flex flex-col gap-8 pt-8">
-            <Paragraph>{t('bio.expanded.paragraph1')}</Paragraph>
-            <Paragraph>{t('bio.expanded.paragraph2')}</Paragraph>
-            <Paragraph>{t('bio.expanded.paragraph3')}</Paragraph>
-          </div>
-        </Collapse>
-        <button
-          className="text-tertiary mt-5 flex cursor-pointer items-center gap-2 self-center"
-          onClick={handleExpandBioClick}
-        >
-          {isExpanded ? (
-            <>
-              <LuChevronUp size={18} />
-              {t('collapseLabel')}
-            </>
-          ) : (
-            <>
-              <LuChevronDown size={18} />
-              {t('expandLabel')}
-            </>
-          )}
-        </button>
+      <div className="flex flex-col">
+        <Paragraph>{t('bio')}</Paragraph>
       </div>
     </div>
   );
