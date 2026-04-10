@@ -6,10 +6,8 @@
 
 My personal portfolio showcasing full-stack development skills and projects.
 
-## Demo
-
 <h2 align="center">
-  <a href="https://portfolio-amadeuio.netlify.app/">👉 amadeu.io</a>
+  <a href="https://portfolio-amadeuio.netlify.app/">👉 Demo</a>
 </h2>
 
 ## About
