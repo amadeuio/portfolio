@@ -4,9 +4,7 @@
 
 # Portfolio
 
-My personal portfolio showcasing skills and projects.
-
-## <a align="center" href="https://portfolio-amadeuio.netlify.app/">👉 Demo</a>
+My personal portfolio showcasing skills and projects. [👉 Demo](https://portfolio-amadeuio.netlify.app/)
 
 ## About
 
