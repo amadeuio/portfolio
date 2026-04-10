@@ -4,36 +4,36 @@
 
 # Portfolio
 
-My personal portfolio page with TypeScript and React.
+My personal portfolio showcasing full-stack development skills and projects.
 
 ## Demo
 
-<p align="center">
-  <img src="public/screenshots/screenshot.png" width="650px" alt="screenshot">
-</p>
 <h2 align="center">
   <a href="https://portfolio-amadeuio.netlify.app/">👉 amadeu.io</a>
 </h2>
 
 ## About
 
-Simple and aesthetic developer portfolio with Bio, Projects, Skills and Contact sections.
+Clean and modern full-stack developer portfolio featuring bio, projects, testimonials, skills, and contact sections.
 
 ## Features
 
-- Expandable bio
-- Dark Mode
-- ENG and ES languages
-- Responsive
+- Dark/Light mode toggle
+- Bilingual support (English/Spanish)
+- Responsive design
+- Testimonials section
+- Project showcase
+- Modern UI with Tailwind CSS
 
 ## Tech Stack
 
-- **UI Library:** React
-- **Languages:** TypeScript, SCSS, HTML
-- **Build Tool:** Vite
+- **Frontend:** React 18, TypeScript
+- **Styling:** Tailwind CSS v4
+- **Build Tool:** Vite 7
+- **Internationalization:** i18next
+- **Icons:** React Icons
 - **Deployment:** Netlify
-- **Dependencies:**
-  - MUI: Tooltip
+- **Node.js:** 20.19+
 
 ## Run Locally
 
@@ -55,18 +55,28 @@ Install dependencies
 npm install
 ```
 
-Start the server
+Start the development server
 
 ```bash
 npm run dev
 ```
 
+## Available Scripts
+
+```bash
+npm run dev        # Start development server
+npm run build      # Build for production
+npm run preview    # Preview production build
+npm run lint       # Run ESLint
+npm run typecheck  # Run TypeScript type checking
+npm run format     # Format code with Prettier
+```
+
 ## Acknowledgements
 
-- [Google Icons](https://fonts.google.com/icons)
-- [ChatGPT](https://chat.openai.com)
-
-Shoutout to my code companions: Coffee & [Cozy Fireplace](https://www.youtube.com/watch?v=ze-TjhwceFE)
+- [React Icons](https://react-icons.github.io/react-icons/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Vite](https://vitejs.dev/)
 
 ## License
 
