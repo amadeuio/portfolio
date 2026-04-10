@@ -1,5 +1,5 @@
 import { useDarkModeContext } from '@/context/DarkModeContext';
-import { Contact, Footer, Intro, Navbar, Projects, Skills } from '@/sections';
+import { Contact, Footer, Intro, Navbar, Projects, Skills, Testimonials } from '@/sections';
 import { cn } from '@/utils/cn';
 
 const App = () => {
@@ -16,6 +16,7 @@ const App = () => {
         <Navbar />
         <Intro />
         <Projects />
+        <Testimonials />
         <Skills />
         <Contact />
         <Footer />

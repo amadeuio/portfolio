@@ -1,25 +1,15 @@
 {
   "hi": "Hola",
   "name": "Soy Amadeu",
-  "profession": "Desarrollador Frontend",
-  "bio": {
-    "short": "Desarrollador frontend autodidacta de Barcelona con más de 2 años de experiencia especializado en React. Busco escribir código simple y de calidad, y tengo dominio programando interfaces detalladas, responsive y user-friendly.",
-    "expanded": {
-      "paragraph1": "Desde hacer jailbreak a iPhones de mis amigos en la ESO para jugar juegos de Pokémon de Game Boy, hasta más tarde estudiar Física, siempre he tenido una inclinación por temas técnicos.",
-      "paragraph2": "Me he pasado los últimos años de mi vida viviendo fuera, principalmente en Centroamérica, haciendo trabajos de hostelería y voluntariados, periodo que ha sido muy transformador y donde surgió por primera vez la idea de convertirme en programador.",
-      "paragraph3": "Estoy motivado en seguir ampliando mis conocimientos y habilidades, y colaborar para crear cosas geniales. Trabajemos juntos! 🚀"
-    }
-  },
-  "expandLabel": "Expandir Bio",
-  "collapseLabel": "Colapsar Bio",
+  "profession": "Desarrollador Full-Stack",
+  "bio": "Soy un desarrollador full-stack basado en Barcelona.\n\nPasé 1,5 años trabajando con clientes como Nestlé, donde fui una voz técnica en un equipo internacional de más de 30 personas.\n\nConstruyo sistemas completos — mi proyecto más reciente es una aplicación de notas cifrada de extremo a extremo con un backend basado en diseño orientado al dominio y un motor de arrastrar y soltar personalizado construido desde cero.\n\nActualmente busco roles full-stack en empresas en etapa inicial donde pueda contribuir en toda la pila tecnológica.",
   "projectsTitle": "Proyectos",
+  "testimonialsTitle": "Lo Que Dicen",
   "skillsTitle": "Conocimientos",
   "contact": "Contacto",
   "contactDescription": "Escríbeme un email y responderé en 1 o 2 días!",
   "credits": "Proyectos y portafolio programados 👨🏻‍💻 por",
   "projects": {
-    "fruitsStore": "Tienda e-commerce estática con React",
-    "battleship": "Juego de Battleship con vanilla TypeScript",
-    "makeYourCv": "Creador de currículum con React"
+    "zeronotes": "Aplicación full-stack con backend basado en diseño orientado al dominio, cifrado del lado del cliente y motor de arrastrar y soltar personalizado. Construida con React, TypeScript, NestJS y PostgreSQL."
   }
 }
