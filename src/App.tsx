@@ -12,7 +12,7 @@ const App = () => {
         isDarkMode ? 'dark' : '',
       )}
     >
-      <div className="flex max-w-5xl flex-col gap-24">
+      <div className="flex max-w-5xl flex-col gap-16">
         <Navbar />
         <Intro />
         <Projects />
