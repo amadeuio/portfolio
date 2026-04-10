@@ -7,6 +7,5 @@ export const PROJECTS: Project[] = [
     demo: 'https://zeronotes.app',
     repo: 'https://github.com/amadeuio/zeronotes',
     descriptionKey: 'projects.zeronotes',
-    featured: true,
   },
 ];
