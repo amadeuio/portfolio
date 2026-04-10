@@ -4,9 +4,9 @@
 
 # Portfolio
 
-My personal portfolio showcasing full-stack development skills and projects.
+My personal portfolio showcasing skills and projects.
 
-# <a align="center" href="https://portfolio-amadeuio.netlify.app/">👉 Demo</a>
+## <a align="center" href="https://portfolio-amadeuio.netlify.app/">👉 Demo</a>
 
 ## About
 
