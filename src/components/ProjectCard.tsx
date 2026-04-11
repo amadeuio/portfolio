@@ -16,7 +16,7 @@ const ProjectButton = ({ label }: ButtonProps) => (
 const ProjectCard = ({ name, img, demo, repo, description }: Project) => (
   <div className="flex flex-col gap-6 md:flex-row md:gap-8">
     <div className="shrink-0 md:w-5/12">
-      <Link href={demo}>
+      <Link href={repo}>
         <img
           src={`images/${img}`}
           alt={name}
