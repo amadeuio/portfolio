@@ -3,8 +3,9 @@ import type { Skill } from '@/types';
 import { BiLogoTypescript } from 'react-icons/bi';
 import { LuDatabase, LuShield } from 'react-icons/lu';
 import {
+  SiExpress,
   SiGit,
-  SiNestjs,
+  SiNextdotjs,
   SiNodedotjs,
   SiPostgresql,
   SiReact,
@@ -16,14 +17,13 @@ import {
 } from 'react-icons/si';
 
 export const SKILLS: Skill[] = [
-  // Backend & Full-Stack
   {
     name: 'Node.js',
     icon: SiNodedotjs,
   },
   {
-    name: 'NestJS',
-    icon: SiNestjs,
+    name: 'Express',
+    icon: SiExpress,
   },
   {
     name: 'PostgreSQL',
@@ -34,8 +34,12 @@ export const SKILLS: Skill[] = [
     icon: SiStrapi,
   },
   {
-    name: 'JWT Auth',
+    name: 'Jose',
     icon: LuShield,
+  },
+  {
+    name: 'Zod',
+    icon: SiZod,
   },
   {
     name: 'Domain-Driven Design',
@@ -45,7 +49,10 @@ export const SKILLS: Skill[] = [
     name: 'Turborepo',
     icon: SiTurborepo,
   },
-  // Frontend
+  {
+    name: 'Next.js',
+    icon: SiNextdotjs,
+  },
   {
     name: 'React',
     icon: SiReact,
@@ -65,11 +72,6 @@ export const SKILLS: Skill[] = [
     name: 'Zustand',
     icon: LuDatabase,
   },
-  {
-    name: 'Zod',
-    icon: SiZod,
-  },
-  // Tools & Testing
   {
     name: 'Git',
     icon: SiGit,
