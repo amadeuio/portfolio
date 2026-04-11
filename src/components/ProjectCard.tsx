@@ -30,9 +30,9 @@ const ProjectCard = ({ name, img, demo, repo, description }: Project) => (
         <Paragraph level={2}>{description}</Paragraph>
       </div>
       <div className="flex gap-x-2">
-        <Link href={demo}>
+        {/* <Link href={demo}>
           <ProjectButton label="Demo" />
-        </Link>
+        </Link> */}
         <Link href={repo}>
           <ProjectButton label="Repo" />
         </Link>
