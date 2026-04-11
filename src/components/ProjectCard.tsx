@@ -13,7 +13,7 @@ const ProjectButton = ({ label }: ButtonProps) => (
   </button>
 );
 
-const ProjectCard = ({ name, img, demo, repo, description }: Project) => (
+const ProjectCard = ({ name, img, repo, description }: Project) => (
   <div className="flex flex-col gap-6 md:flex-row md:gap-8">
     <div className="shrink-0 md:w-5/12">
       <Link href={repo}>
