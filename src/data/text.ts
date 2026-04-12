@@ -2,7 +2,7 @@ export const TEXT = {
   hi: 'Hi',
   name: "I'm Amadeu",
   profession: 'Full-Stack Developer',
-  bio: "I'm a full-stack developer based in Barcelona. I spent 1.5 years working with clients like Nestlé, where I was a technical voice on a 30+ person international team.\n\nI build complete systems. My most recent project is an end-to-end encrypted notes app with a domain-driven backend and a custom drag-and-drop engine built from scratch. I'm currently looking for full-stack roles where I can contribute across the entire stack and continue growing as an engineer.",
+  bio: `I’m a full-stack developer with experience delivering applications for global clients like Nestlé. For me, writing code isn’t just about making things work, it’s about making them clear, maintainable,  and robust. \n\n I enjoy thinking through problems across the whole stack and prioritize solid architecture, performance, and security from the ground up, not as afterthoughts. I’m at my best when I’m building things that people depend on.`,
   projectsTitle: 'Projects',
   testimonialsTitle: 'What People Say',
   skillsTitle: 'Skills',
