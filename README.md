@@ -33,7 +33,7 @@ Clean and modern full-stack developer portfolio featuring bio, projects, testimo
 Clone the project
 
 ```bash
-git clone git@github.com:amadeuio/portfolio.git
+git clone git@github.com:amadeuserras/portfolio.git
 ```
 
 Go to the project directory

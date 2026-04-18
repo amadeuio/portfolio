@@ -6,7 +6,7 @@ const Navbar = () => {
 
   return (
     <nav className="mb-5 flex items-center justify-between py-4 sm:py-8">
-      <div className="text-xl font-semibold">amadeuio</div>
+      <div className="text-xl font-semibold">Amadeu</div>
       <div className="flex items-center gap-x-6">
         <DarkSwitch isDarkMode={isDarkMode} onToggle={toggleDarkMode} />
       </div>

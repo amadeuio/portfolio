@@ -1,6 +1,7 @@
 import type { Testimonial } from '@/types';
 
-export const TESTIMONIALS_LINK = 'https://www.linkedin.com/in/amadeuio/details/recommendations/';
+export const TESTIMONIALS_LINK =
+  'https://www.linkedin.com/in/amadeuserras/details/recommendations/';
 
 export const TESTIMONIALS: Testimonial[] = [
   {

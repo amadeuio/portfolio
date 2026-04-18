@@ -6,11 +6,11 @@ export const CONTACT: Contact = {
   email: 'amadeuserras@gmail.com',
   links: [
     {
-      href: 'https://www.linkedin.com/in/amadeuio',
+      href: 'https://www.linkedin.com/in/amadeuserras',
       icon: FaLinkedinIn,
     },
     {
-      href: 'https://github.com/amadeuio',
+      href: 'https://github.com/amadeuserras',
       icon: LuGithub,
     },
   ],
