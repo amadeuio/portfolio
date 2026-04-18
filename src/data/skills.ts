@@ -1,10 +1,11 @@
-import { LinuxIcon, ViteIcon } from '@/custom-icons';
+import { CursorIcon, LinuxIcon, ViteIcon } from '@/custom-icons';
 import type { Skill } from '@/types';
 import { BiLogoTypescript } from 'react-icons/bi';
 import { LuDatabase, LuShield } from 'react-icons/lu';
 import {
   SiExpress,
   SiGit,
+  SiNestjs,
   SiNextdotjs,
   SiNodedotjs,
   SiPostgresql,
@@ -50,6 +51,10 @@ export const SKILLS: Skill[] = [
     icon: SiTurborepo,
   },
   {
+    name: 'Nest.js',
+    icon: SiNestjs,
+  },
+  {
     name: 'Next.js',
     icon: SiNextdotjs,
   },
@@ -71,6 +76,10 @@ export const SKILLS: Skill[] = [
   {
     name: 'Zustand',
     icon: LuDatabase,
+  },
+  {
+    name: 'Cursor',
+    icon: CursorIcon,
   },
   {
     name: 'Git',
